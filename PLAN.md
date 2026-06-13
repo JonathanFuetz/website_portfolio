@@ -233,7 +233,7 @@ Website_Jonathan/
 2. Rechtliche Veroeffentlichungsblocker klaeren: Impressum mit korrekten Pflichtangaben sowie Datenschutzerklaerung fuer GitHub Pages, Serverlogs und E-Mail-Kontakt finalisieren oder rechtlich pruefen lassen.
 3. GitHub Pages vorbereiten: `jonathanfuetz.de` ist in den Repository-Einstellungen als Custom Domain eingetragen.
 4. DNS vorbereiten: Apex-Domain `jonathanfuetz.de` zeigt auf GitHub Pages; `www.jonathanfuetz.de` zeigt per CNAME auf GitHub Pages.
-5. Repository fuer Custom Domain vorbereiten: Astro-Build ist ohne Repository-Basepath fuer die echte Domain vorbereitet; GitHub-HTTPS-Zertifikat abwarten und danach `Enforce HTTPS` aktivieren.
+5. Repository fuer Custom Domain vorbereiten: Astro-Build ist ohne Repository-Basepath fuer die echte Domain deployed; GitHub-HTTPS-Zertifikat abwarten und danach `Enforce HTTPS` aktivieren.
 6. SEO-Konfiguration pruefen: `site.seo.baseUrl` ist auf `https://jonathanfuetz.de` gesetzt; Canonicals, Sitemap und robots.txt fuer die Hauptdomain pruefen.
 7. Finale QA durchfuehren: Build, interne Links, HTTPS, Weiterleitung `www`, Meta-Robots, robots.txt, Sitemap, mobile Darstellung und rechtliche Seiten pruefen.
 8. Erst nach rechtlicher Freigabe indexierbar schalten: `PUBLIC_SITE_NOINDEX` fuer die finale Umgebung deaktivieren; die GitHub-Pages-Testumgebung bleibt bis dahin blockiert.
@@ -348,7 +348,7 @@ Website_Jonathan/
 ### Meilenstein 9: Eigene Domain
 
 - Ziel: Spätere Domain sauber verbinden.
-- Aufgaben: GitHub-Pages-Custom-Domain verbunden, DNS gesetzt; offen sind HTTPS-Aktivierung, Build-Konfiguration fuer die Hauptdomain und `www`-Weiterleitung pruefen.
+- Aufgaben: GitHub-Pages-Custom-Domain verbunden, DNS gesetzt, Build-Konfiguration fuer die Hauptdomain deployed; offen sind HTTPS-Zertifikat, `Enforce HTTPS` und `www`-Weiterleitung pruefen.
 - Bereiche: Domain-Anbieter, Hosting-Anbieter, Redirect-Konfiguration.
 - Ergebnis: Website läuft unter `https://jonathanfuetz.de`.
 - Prüfschritte: DNS-Auflösung, SSL-Zertifikat, Weiterleitung von `www`, Canonical URL.

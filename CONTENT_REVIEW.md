@@ -24,7 +24,7 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 - `jonathanfuetz.de` bei INWX gekauft; Registry-Meldung nach Kauf: `success`, Status `pendingCreate`, STID `8b884499-999b-4768-8f3d-fabb8a5e6221`.
 - Domain nur mit DNS-Zugriff kaufen; fuer die aktuelle Architektur ist kein Website-Baukasten oder separates Hosting-Paket erforderlich.
 - Vor indexierbarer Veroeffentlichung Impressum und Datenschutzerklaerung finalisieren oder rechtlich pruefen lassen.
-- GitHub Pages Custom Domain ist auf `jonathanfuetz.de` gesetzt; GitHub-Status `https_enforced=false`, HTTPS-Zertifikat noch nicht final aktiv.
+- GitHub Pages Custom Domain ist auf `jonathanfuetz.de` gesetzt; GitHub-Status nach Deploy `https_enforced=false`, HTTPS-Zertifikat noch nicht erzeugt (`The certificate does not exist yet`).
 - DNS fuer `jonathanfuetz.de` und `www.jonathanfuetz.de` ist gesetzt und oeffentlich aufloesbar.
 - DNS-Zielwerte fuer GitHub Pages:
   - `A` fuer `@`: `185.199.108.153`
@@ -35,6 +35,8 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
   - `CNAME` fuer `www`: `JonathanFuetz.github.io`
 - Danach technische Konfiguration aktualisieren: echte Canonical Domain, Sitemap, robots.txt, ggf. CNAME-Datei und Build-Konfiguration fuer die Hauptdomain.
 - Deploy-Build verwendet `ASTRO_SITE=https://jonathanfuetz.de` ohne `ASTRO_BASE`; Canonical URL, Sitemap und interne Links sollen damit auf die Custom Domain zeigen.
+- Manueller Deploy-Workflow erfolgreich: `https://github.com/JonathanFuetz/website_portfolio/actions/runs/27479618249`, Commit `46867d7`.
+- Live-Pruefung nach Deploy: Inhalt, Canonical URL, Sitemap und `noindex` sind korrekt auf `jonathanfuetz.de`; HTTPS-Zertifikat bleibt noch offen.
 - `PUBLIC_SITE_NOINDEX=true` ist weiterhin aktiv; `robots.txt` blockiert mit `Disallow: /`, Meta-Robots ist `noindex, nofollow`.
 - Finale QA erst nach DNS/HTTPS: Hauptdomain, `www`-Weiterleitung, interne Links, Meta-Robots, robots.txt, Sitemap, mobile Darstellung und rechtliche Seiten pruefen.
 - `PUBLIC_SITE_NOINDEX` bleibt fuer die Testumgebung aktiv. Indexierung erst deaktivieren, wenn Rechtliches und Domain final freigegeben sind.
