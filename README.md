@@ -85,16 +85,15 @@ Meilenstein 8 bereitet die Testveroeffentlichung vor:
 
 - GitHub-Pages-Workflow unter `.github/workflows/deploy.yml`
 - Workflow startet nur manuell ueber `workflow_dispatch`
-- Test-URL: `https://jonathanfuetz.github.io/website_portfolio/`
-- GitHub-Pages-Build setzt `ASTRO_BASE=/website_portfolio`
-- Testumgebung setzt `PUBLIC_SITE_NOINDEX=true`, solange rechtliche Platzhalter offen sind
+- Custom-Domain-URL: `https://jonathanfuetz.de/`
+- GitHub-Pages-Build setzt `ASTRO_SITE=https://jonathanfuetz.de`
+- Custom-Domain-Build setzt weiterhin `PUBLIC_SITE_NOINDEX=true`, solange rechtliche Platzhalter offen sind
 - Vor dem manuellen Start muss GitHub Pages im Repository auf Source `GitHub Actions` gestellt werden
 
-## GitHub-Pages-Testbuild
+## GitHub-Pages-Custom-Domain-Build
 
 ```bash
-ASTRO_SITE=https://jonathanfuetz.github.io \
-ASTRO_BASE=/website_portfolio \
+ASTRO_SITE=https://jonathanfuetz.de \
 PUBLIC_SITE_NOINDEX=true \
 npm run build
 ```

@@ -18,8 +18,7 @@ jobs:
       - name: Install, build, and upload site
         uses: withastro/action@v6
         env:
-          ASTRO_SITE: "https://jonathanfuetz.github.io"
-          ASTRO_BASE: "/website_portfolio"
+          ASTRO_SITE: "https://jonathanfuetz.de"
           PUBLIC_SITE_NOINDEX: "true"
 
   deploy:

@@ -4,7 +4,7 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 
 ## Noch Zu Klaeren
 
-- Domainwunsch `jonathanfuetz.com` ist festgelegt; Verfuegbarkeit, Kauf und DNS-Anbieter sind noch offen.
+- Domain `jonathanfuetz.de` ist bei INWX gekauft und aktiv verwaltbar; DNS ist fuer GitHub Pages gesetzt.
 - Entscheiden, ob ein PDF-Lebenslauf angeboten wird.
 - Klaeren, ob ein GitHub-Profil fachlich sinnvoll und oeffentlich verlinkbar ist.
 - Noten sind aktuell bewusst nicht auf der Website genannt. Spaeter entscheiden, ob Vordiplom-/Abiturnoten oeffentlich erscheinen sollen.
@@ -12,8 +12,8 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 
 ## SEO Und Rechtliches
 
-- `site.seo.baseUrl` verwendet aktuell `https://jonathan-fuetz.example` als reservierten Platzhalter fuer lokale/noch nicht finale Builds. Nach Kauf und DNS-Vorbereitung auf `https://jonathanfuetz.com` umstellen.
-- `robots.txt` und `sitemap.xml` werden aus Astro-Endpunkten erzeugt. Fuer GitHub Pages werden `ASTRO_SITE=https://jonathanfuetz.github.io` und `ASTRO_BASE=/website_portfolio` gesetzt.
+- `site.seo.baseUrl` ist auf `https://jonathanfuetz.de` gesetzt.
+- `robots.txt` und `sitemap.xml` werden aus Astro-Endpunkten erzeugt. Fuer GitHub Pages wird `ASTRO_SITE=https://jonathanfuetz.de` gesetzt; `ASTRO_BASE` wird fuer die Custom Domain nicht mehr gesetzt.
 - Open-Graph-Bild ist noch nicht gesetzt. Nach Freigabe eines Portraets oder neutralen Vorschaubilds `site.seo.defaultImage` ergaenzen.
 - Impressum: vollstaendiger Name, ladungsfaehige Anschrift oder rechtlich zulaessige Alternative, Kontaktmoeglichkeit und Verantwortlichkeit rechtlich pruefen.
 - Datenschutz: Hosting-Anbieter, Serverlog-Hinweise und Umgang mit E-Mail-Kontakt nach Hosting-Auswahl finalisieren.
@@ -21,11 +21,21 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 
 ## Fortsetzungsplan Domain Und Finale Veroeffentlichung
 
-- `jonathanfuetz.com` bei einem Registrar auf Verfuegbarkeit und Preis pruefen; noch nicht als gekauft annehmen.
+- `jonathanfuetz.de` bei INWX gekauft; Registry-Meldung nach Kauf: `success`, Status `pendingCreate`, STID `8b884499-999b-4768-8f3d-fabb8a5e6221`.
 - Domain nur mit DNS-Zugriff kaufen; fuer die aktuelle Architektur ist kein Website-Baukasten oder separates Hosting-Paket erforderlich.
 - Vor indexierbarer Veroeffentlichung Impressum und Datenschutzerklaerung finalisieren oder rechtlich pruefen lassen.
-- Nach Domainkauf GitHub Pages als Custom Domain konfigurieren und DNS fuer `jonathanfuetz.com` sowie `www.jonathanfuetz.com` setzen.
+- GitHub Pages Custom Domain ist auf `jonathanfuetz.de` gesetzt; GitHub-Status `https_enforced=false`, HTTPS-Zertifikat noch nicht final aktiv.
+- DNS fuer `jonathanfuetz.de` und `www.jonathanfuetz.de` ist gesetzt und oeffentlich aufloesbar.
+- DNS-Zielwerte fuer GitHub Pages:
+  - `A` fuer `@`: `185.199.108.153`
+  - `A` fuer `@`: `185.199.109.153`
+  - `A` fuer `@`: `185.199.110.153`
+  - `A` fuer `@`: `185.199.111.153`
+  - optional `AAAA` fuer `@`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+  - `CNAME` fuer `www`: `JonathanFuetz.github.io`
 - Danach technische Konfiguration aktualisieren: echte Canonical Domain, Sitemap, robots.txt, ggf. CNAME-Datei und Build-Konfiguration fuer die Hauptdomain.
+- Deploy-Build verwendet `ASTRO_SITE=https://jonathanfuetz.de` ohne `ASTRO_BASE`; Canonical URL, Sitemap und interne Links sollen damit auf die Custom Domain zeigen.
+- `PUBLIC_SITE_NOINDEX=true` ist weiterhin aktiv; `robots.txt` blockiert mit `Disallow: /`, Meta-Robots ist `noindex, nofollow`.
 - Finale QA erst nach DNS/HTTPS: Hauptdomain, `www`-Weiterleitung, interne Links, Meta-Robots, robots.txt, Sitemap, mobile Darstellung und rechtliche Seiten pruefen.
 - `PUBLIC_SITE_NOINDEX` bleibt fuer die Testumgebung aktiv. Indexierung erst deaktivieren, wenn Rechtliches und Domain final freigegeben sind.
 
