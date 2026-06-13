@@ -2,30 +2,51 @@
   "sectionTitle": "Technische Kompetenzen",
   "groups": [
     {
-      "group": "CAD/CAE",
+      "group": "CAD und Engineering-Software",
+      "summary": "Werkzeuge fuer Konstruktion, technische Berechnung und ingenieurwissenschaftliche Arbeit.",
       "items": [
-        "[PLATZHALTER: CAD-Tool]",
-        "[PLATZHALTER: CAE- oder Simulationswerkzeug]"
+        "SolidWorks",
+        "Mathcad",
+        "MATLAB"
       ]
     },
     {
-      "group": "Programmierung und Daten",
+      "group": "Simulation und Analyse",
+      "summary": "Studienbezogene Simulations- und Analysewerkzeuge ohne frei erfundene Kompetenzstufen.",
       "items": [
-        "[PLATZHALTER: Programmiersprache]",
-        "[PLATZHALTER: Analyse- oder Automatisierungstool]"
+        "ANSYS Workbench",
+        "LS-DYNA",
+        "Patran/Nastran",
+        "OpenFOAM",
+        "ParaView"
       ]
     },
     {
-      "group": "Fertigung und Entwicklung",
+      "group": "Programmierung und Hardware",
+      "summary": "Praktische Anwendung in Bildverarbeitung, Datenauswertung und Arduino-Testumgebungen.",
       "items": [
-        "[PLATZHALTER: Fertigungsverfahren]",
-        "[PLATZHALTER: Entwicklungs- oder Testmethode]"
+        "Python",
+        "OpenCV",
+        "NumPy",
+        "Matplotlib",
+        "C# - Grundkenntnisse",
+        "Arduino"
+      ]
+    },
+    {
+      "group": "Office",
+      "summary": "Allgemeine Arbeitswerkzeuge fuer Dokumentation, Auswertung und Praesentation.",
+      "items": [
+        "Microsoft Office"
       ]
     },
     {
       "group": "Sprachen",
+      "summary": "Sprachkenntnisse gemaess vorliegender Profilgrundlage.",
       "items": [
-        "[PLATZHALTER: Sprache und belegbarer Stand]"
+        "Deutsch - Muttersprache",
+        "Englisch - B2+",
+        "Französisch - B1"
       ]
     }
   ]

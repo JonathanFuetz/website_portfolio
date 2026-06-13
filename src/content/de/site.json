@@ -1,5 +1,5 @@
 {
-  "brand": "[PLATZHALTER: Name]",
+  "brand": "Jonathan Fütz",
   "homeLabel": "Start",
   "navigationLabel": "Hauptnavigation",
   "nav": [
@@ -20,8 +20,8 @@
       "href": "/#kompetenzen"
     },
     {
-      "label": "Projekte",
-      "href": "/#projekte"
+      "label": "Schwerpunkte",
+      "href": "/#schwerpunkte"
     },
     {
       "label": "Kontakt",
@@ -40,7 +40,7 @@
   ],
   "footer": {
     "note": "Statische Portfolio-Website ohne Tracking und ohne Kontaktformular.",
-    "copyright": "(c) 2026 [PLATZHALTER: Name]"
+    "copyright": "(c) 2026 Jonathan Fütz"
   },
   "legal": {
     "impressum": {

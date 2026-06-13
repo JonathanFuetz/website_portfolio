@@ -1,0 +1,51 @@
+{
+  "sectionTitle": "Technische Schwerpunkte",
+  "labels": {
+    "contribution": "Eigene Rolle",
+    "methods": "Methoden und Tools",
+    "result": "Freigabe"
+  },
+  "items": [
+    {
+      "title": "Demonstrator für Hochlast-Aktoren",
+      "origin": "Fraunhofer IWU | Werkstudent Formgedächtnistechnik",
+      "status": "Basisangaben freigegeben",
+      "context": "Technischer Schwerpunkt innerhalb der Werkstudententätigkeit am Fraunhofer IWU. Öffentliche Darstellung nur ohne vertrauliche Bilder, technische Daten oder interne Projektdetails.",
+      "contribution": "Konzeption und Aufbau eines Demonstrators, Entwicklung und Test der Steuer- und Messtechnik sowie CAD-Konstruktion von Komponenten und Baugruppen.",
+      "methods": [
+        "Thermische Formgedächtnislegierungen",
+        "CAD-Konstruktion",
+        "Mess- und Steuerungstechnik"
+      ],
+      "result": "Tätigkeiten und technische Einordnung sind freigegeben. Weitere Projekte oder Aufgaben können später ergänzt werden."
+    },
+    {
+      "title": "Python-/OpenCV-Bildverarbeitung und Arduino-Verifikation",
+      "origin": "Hannweber Engineering | Freiwilliges Praktikum",
+      "status": "Basisangaben freigegeben",
+      "context": "Technischer Schwerpunkt innerhalb des freiwilligen Praktikums bei Hannweber Engineering. Die Arduino-Testumgebung diente zur Verifikation des Python-Programms unter simulierten realen Bedingungen.",
+      "contribution": "Programmierung in Python mit Schwerpunkt Videoverarbeitung mittels OpenCV, selbstständige Implementierung von Bildauswertungsalgorithmen zur Objekttrennung und Aufbau einer Arduino-basierten Testumgebung.",
+      "methods": [
+        "Python",
+        "OpenCV",
+        "Bildauswertungsalgorithmen",
+        "Arduino",
+        "Testumgebung zur Verifikation"
+      ],
+      "result": "Tätigkeiten und technische Einordnung sind freigegeben; konkrete Ergebnisse können später ergänzt werden."
+    },
+    {
+      "title": "Klebverbindungen in flüssigem Stickstoff",
+      "origin": "Fraunhofer IMWS | Praktikum Faserverbundsysteme",
+      "status": "Basisangaben freigegeben",
+      "context": "Praktikum am Fraunhofer IMWS im Bereich Bewertung von Faserverbundsystemen.",
+      "contribution": "Aufbau einer Testumgebung, geometrische Vermessung und Kleben von Polymerproben sowie Bestimmung der Zugfestigkeit.",
+      "methods": [
+        "Experimenteller Versuchsaufbau",
+        "Polymerproben",
+        "Zugfestigkeitsbestimmung"
+      ],
+      "result": "Tätigkeiten und technische Einordnung sind freigegeben; konkrete Ergebnisse können später ergänzt werden."
+    }
+  ]
+}

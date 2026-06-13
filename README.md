@@ -31,7 +31,7 @@ Meilenstein 1 aus `PLAN.md` ist die technische Astro-Projektgrundlage:
 Meilenstein 2 trennt sichtbare Inhalte von der Astro-Seitenstruktur:
 
 - Profil, Ausbildung und Erfahrung in Markdown-Dateien unter `src/content/de/`
-- Skills und Projekte in JSON-Dateien unter `src/content/de/`
+- Skills und technische Schwerpunkte in JSON-Dateien unter `src/content/de/`
 - Startseite rendert Platzhalter aus den Inhaltsdateien
 - fehlende echte Angaben bleiben als `[PLATZHALTER: ...]` markiert
 
@@ -39,7 +39,7 @@ Meilenstein 3 setzt die klickbare Seitenstruktur um:
 
 - Header mit Navigation zu den Hauptabschnitten
 - Footer mit rechtlichen Links
-- Abschnittsanker fuer Profil, Ausbildung, Erfahrung, Kompetenzen, Projekte und Kontakt
+- Abschnittsanker fuer Profil, Ausbildung, Erfahrung, Kompetenzen, technische Schwerpunkte und Kontakt
 - eigene Seiten fuer `Impressum` und `Datenschutz`
 - rechtliche Inhalte bleiben Platzhalter bis zur Pruefung
 
@@ -50,3 +50,19 @@ Meilenstein 4 definiert das visuelle Grundsystem:
 - responsive Header-, Grid- und Card-Regeln fuer Desktop, Tablet und Smartphone
 - sichtbare Tastatur-Fokuszustaende und Skip-Link
 - keine viewportabhaengigen Schriftgroessen
+
+Meilenstein 5a bereitet die persoenlichen Inhalte vor:
+
+- bestaetigte Profil-, Ausbildungs- und Erfahrungsdaten aus der Profilgrundlage
+- technische Kompetenzen ohne erfundene Kompetenzwerte
+- technische Schwerpunkte ohne vertrauliche Details oder ungepruefte Ergebnisse
+- `[PRUEFEN]`-Angaben bleiben ausgeschlossen
+
+Meilenstein 5 verfeinert Kompetenzen und technische Schwerpunkte:
+
+- `SkillGroup` fuer Kompetenzgruppen mit Anwendungskontext
+- `FocusCard` fuer Schwerpunktkarten mit Erfahrungsstation, Rolle, Methoden, Stand und Freigabestatus
+- interne Freigabe- und Formulierungsnotizen in `CONTENT_REVIEW.md`
+- keine Prozentwerte oder frei erfundenen Kompetenzniveaus
+- freigegebene Entscheidungen zu E-Mail, Studienmodulen, Stipendien, CITY-CAR und Interessen sind eingepflegt
+- Noten, private Kontaktdaten und REICHE GROUP bleiben von der Website-Hauptseite ausgeschlossen

@@ -2,7 +2,7 @@
 
 ## Zusammenfassung
 
-Die erste Version wird eine kompakte, seriöse, statische Portfolio-Website auf Deutsch: ein Onepager für Profil, Ausbildung, Erfahrung, Kompetenzen, Projekte und Kontakt, ergänzt durch separate Seiten für Impressum und Datenschutzerklärung. Die Website wird für Jonathan Fütz als Maschinenbaustudent mit Vertiefung Luft- und Raumfahrttechnik an der Technischen Universität Dresden geplant. Fachlicher Schwerpunkt der Darstellung: Konstruktion, Mess- und Steuerungstechnik, Formgedächtnistechnik, Python-basierte Bildverarbeitung sowie studienbezogene Simulations- und Analysewerkzeuge. Die Website bleibt schnell, barrierearm, datenschutzbewusst und später leicht auf Englisch, eigene Domain und professionelle E-Mail erweiterbar.
+Die erste Version wird eine kompakte, seriöse, statische Portfolio-Website auf Deutsch: ein Onepager für Profil, Ausbildung, Erfahrung, Kompetenzen, technische Schwerpunkte und Kontakt, ergänzt durch separate Seiten für Impressum und Datenschutzerklärung. Die Website wird für Jonathan Fütz als Maschinenbaustudent mit Vertiefung Luft- und Raumfahrttechnik an der Technischen Universität Dresden geplant. Fachlicher Schwerpunkt der Darstellung: Konstruktion, Mess- und Steuerungstechnik, Formgedächtnistechnik, Python-basierte Bildverarbeitung sowie studienbezogene Simulations- und Analysewerkzeuge. Die Website bleibt schnell, barrierearm, datenschutzbewusst und später leicht auf Englisch, eigene Domain und professionelle E-Mail erweiterbar.
 
 Empfohlene Grundentscheidung: statische Website mit getrennten Inhaltsdateien in Markdown/Datenformaten, GitHub als bevorzugter Arbeits- und Veröffentlichungsweg, aber ohne harte Bindung an einen einzelnen Hosting-Anbieter.
 
@@ -51,7 +51,7 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
   - Ausbildung und Auszeichnungen: TU Dresden, Abitur, Stipendien; relevante Module bleiben Platzhalter bis nachgeliefert.
   - Berufserfahrung: Fraunhofer IWU, Hannweber Engineering, Fraunhofer IMWS; KSB optional gekürzt.
   - Technische Kompetenzen: CAD/Engineering-Software, Simulation/Analyse, Programmierung/Hardware, Office, Sprachen.
-  - Projekte: kompakte Projektkarten mit technischem Kontext, Methoden, Tools, Ergebnis nur wenn belegt und freigegeben.
+  - Technische Schwerpunkte: praxisnahe Schwerpunktkarten mit Erfahrungsstation, technischem Kontext, Methoden, Tools und Stand nur wenn belegt und freigegeben.
   - Kontakt: geschützte E-Mail-Darstellung nach Festlegung, LinkedIn-Link, Standortregion Dresden.
 - `/impressum/`:
   - Rechtlicher Platzhalter, später mit korrekten Pflichtangaben zu füllen.
@@ -59,7 +59,7 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
   - Datenschutz-Platzhalter für statische Website ohne Tracking und ohne Kontaktformular.
 - Später optional:
   - `/en/` englische Version.
-  - `/projekte/[projekt]/` Detailseiten nur bei ausreichend belastbarem Material.
+  - `/projekte/[projekt]/` Detailseiten nur später und nur bei ausreichend belastbarem, freigegebenem Material.
 
 ### Zwingende Inhalte für Version 1
 
@@ -94,13 +94,13 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
   - MINT-Stipendium der Gesellschaft von Freunden und Förderern der TU Dresden e. V., 10/2023-09/2024.
 - Interessen optional und nachgeordnet: 3D-Druck, Klavierspielen, Leichtathletik, Kraftsport.
 
-### Projektkandidaten
+### Kandidaten Für Technische Schwerpunkte
 
 - FGL-Demonstrator / Hochlast-Aktoren auf Basis thermischer Formgedächtnislegierungen, nur mit geprüfter Freigabe zu Bildern, technischen Daten und Details.
 - Python-/OpenCV-Bildverarbeitung bei Hannweber Engineering, Schwerpunkt Videoverarbeitung und Objekttrennung.
 - Arduino-basierte Testumgebung zur Simulation realer Bedingungen.
 - Testumgebung zur Untersuchung der Haltbarkeit von Klebverbindungen in flüssigem Stickstoff am Fraunhofer IMWS.
-- Ausgewählte Studienprojekte, falls ausreichend konkrete und veröffentlichbare Angaben nachgeliefert werden.
+- Ausgewählte Studienprojekte, falls ausreichend konkrete und veröffentlichbare Angaben nachgeliefert werden; diese würden später als echte Projekte oder Detailseiten ergänzt.
 
 ### Optionale Inhalte
 
@@ -125,7 +125,7 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Farben: neutrales Grundlayout, dunkle Textfarbe, helle Flächen, ein technischer Akzentton wie Blau, Petrol oder Stahlgrün.
 - Abstände: großzügig, aber kompakt genug für schnelle Prüfung durch Recruiter.
 - Bildsprache: professionelles Porträt, optional technische Projektbilder; keine generischen Stock-Motive.
-- Komponenten: klare Abschnitte, kompakte Kompetenzlisten, Projektkarten mit maximal 8px Radius, keine dekorativen Effekte ohne Informationswert.
+- Komponenten: klare Abschnitte, kompakte Kompetenzlisten, Schwerpunktkarten mit maximal 8px Radius, keine dekorativen Effekte ohne Informationswert.
 
 ## Technische Empfehlung
 
@@ -163,7 +163,7 @@ Website_Jonathan/
         education.md
         experience.md
         skills.json
-        projects.json
+        focusAreas.json
       en/
         .gitkeep
     pages/
@@ -173,7 +173,7 @@ Website_Jonathan/
     components/
       Header.astro
       Section.astro
-      ProjectCard.astro
+      FocusCard.astro
       SkillGroup.astro
       Footer.astro
     styles/
@@ -260,19 +260,19 @@ Website_Jonathan/
 - Prüfschritte: Sichtprüfung bei typischen Viewports, Textüberläufe, Kontrast.
 - Abnahme: Keine verspielte Agentur-Optik, alle Texte lesbar, keine Layoutüberlappungen.
 
-### Meilenstein 5: Kompetenzen Und Projekte
+### Meilenstein 5: Kompetenzen Und Technische Schwerpunkte
 
-- Ziel: Technische Fähigkeiten und Projekte prüfbar darstellen.
-- Aufgaben: Skill-Gruppen, Projektkarten, Tool-Tags, Kontext und belegbare Ergebnisse einbauen; dabei bestätigte Angaben aus `PROFILE_CONTENT_Jonathan_Fuetz.md` übernehmen und `[PRÜFEN]`-Inhalte als offene Punkte markieren.
-- Bereiche: `skills.json`, `projects.json`, `SkillGroup`, `ProjectCard`.
+- Ziel: Technische Fähigkeiten und praxisnahe Schwerpunkte prüfbar darstellen.
+- Aufgaben: Skill-Gruppen, Schwerpunktkarten, Tool-Tags, Kontext und belegbare Ergebnisse einbauen; dabei bestätigte Angaben aus `PROFILE_CONTENT_Jonathan_Fuetz.md` übernehmen und `[PRÜFEN]`-Inhalte als offene Punkte markieren.
+- Bereiche: `skills.json`, `focusAreas.json`, `SkillGroup`, `FocusCard`.
 - Ergebnis: Recruiter und Fachabteilungen können technische Eignung schnell erfassen.
 - Prüfschritte: Keine unbelegten Kompetenzgrade, keine vertraulichen Projektdetails, keine Projektbilder oder Arbeitgeberlogos ohne Freigabe.
-- Abnahme: Jede Fähigkeit und jedes Projekt stammt aus freigegebenem Material oder ist Platzhalter.
+- Abnahme: Jede Fähigkeit und jeder technische Schwerpunkt stammt aus freigegebenem Material oder bleibt als offener Stand markiert.
 
 ### Meilenstein 5a: Persönliche Inhalte Einpflegen
 
 - Ziel: Bestätigte öffentliche Profil-, Ausbildungs- und Erfahrungsdaten in die Inhaltsdateien übernehmen.
-- Aufgaben: `profile.md`, `education.md`, `experience.md`, `skills.json` und `projects.json` mit bestätigten Fakten aus `PROFILE_CONTENT_Jonathan_Fuetz.md` aktualisieren.
+- Aufgaben: `profile.md`, `education.md`, `experience.md`, `skills.json` und `focusAreas.json` mit bestätigten Fakten aus `PROFILE_CONTENT_Jonathan_Fuetz.md` aktualisieren.
 - Bereiche: `src/content/de/`.
 - Ergebnis: Die Website enthält echte, belegbare Basisdaten statt generischer Platzhalter, aber keine privaten oder ungeprüften Angaben.
 - Prüfschritte: Alle `[PRÜFEN]`-Punkte bleiben ausgeschlossen oder sichtbar als offene interne To-dos; keine private Adresse, kein Geburtsdatum, keine private Telefonnummer.

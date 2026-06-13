@@ -1,0 +1,17 @@
+---
+const { focus, labels } = Astro.props;
+---
+
+<article class="entry focus-card">
+  <div class="entry-heading">
+    <p class="entry-meta">{focus.origin}</p>
+    {focus.status && <span class="status-badge">{focus.status}</span>}
+  </div>
+  <h3>{focus.title}</h3>
+  <p>{focus.context}</p>
+  {focus.contribution && <p><strong>{labels.contribution}:</strong> {focus.contribution}</p>}
+  <ul class="tag-list" aria-label={`${labels.methods} fuer ${focus.title}`}>
+    {focus.methods.map((method) => <li>{method}</li>)}
+  </ul>
+  <p><strong>{labels.result}:</strong> {focus.result}</p>
+</article>
