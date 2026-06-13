@@ -22,11 +22,13 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 ## Testveroeffentlichung
 
 - GitHub-Remote vorhanden: `https://github.com/JonathanFuetz/website_portfolio.git`.
-- GitHub-Pages-Test-URL vorgesehen: `https://jonathanfuetz.github.io/website_portfolio/`.
+- GitHub-Pages-Test-URL aktiv: `https://jonathanfuetz.github.io/website_portfolio/`.
 - Workflow `.github/workflows/deploy.yml` ist vorbereitet und wird nur manuell per `workflow_dispatch` gestartet.
 - Testbuild setzt `PUBLIC_SITE_NOINDEX=true`; dadurch werden Meta-Robots auf `noindex, nofollow` gesetzt und `robots.txt` blockiert Crawler mit `Disallow: /`.
-- Vor dem manuellen Start auf GitHub muss in den Repository-Einstellungen Pages als Source `GitHub Actions` gewaehlt werden.
-- Oeffentliche Testfreischaltung bleibt wegen Impressum-/Datenschutz-Platzhaltern eine bewusste Freigabeentscheidung.
+- GitHub Pages ist als Source `GitHub Actions` konfiguriert.
+- Manueller Workflow-Lauf erfolgreich: `https://github.com/JonathanFuetz/website_portfolio/actions/runs/27467416719`.
+- Online-Pruefung erfolgreich: HTTP 200, HTTPS aktiv, Basepath-Links korrekt, `noindex, nofollow` gesetzt, `robots.txt` blockiert Crawler.
+- Oeffentliche Testfreischaltung ist erfolgt; finale Veroeffentlichung bleibt wegen Impressum-/Datenschutz-Platzhaltern blockiert.
 
 ## QA Meilenstein 7
 

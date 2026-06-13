@@ -328,8 +328,10 @@ Website_Jonathan/
 - Ergebnis: Test-URL ist öffentlich erreichbar.
 - Prüfschritte: Online-Aufruf, HTTPS, Assets, mobile Darstellung, rechtliche Seiten.
 - Abnahme: Website funktioniert unter Test-URL vollständig und ohne lokale Abhängigkeiten.
-- Status: technisch vorbereitet fuer GitHub Pages unter `https://jonathanfuetz.github.io/website_portfolio/`, aber nicht automatisch veroeffentlicht. Der Deploy-Workflow ist manuell und setzt fuer die Testumgebung `noindex`, solange rechtliche Platzhalter offen sind.
-- Blocker vor oeffentlicher Testfreischaltung: GitHub Pages in den Repository-Einstellungen auf GitHub Actions stellen, Impressum/Datenschutz bewusst pruefen oder Platzhalterrisiko akzeptieren, Workflow manuell starten.
+- Status: umgesetzt und manuell veroeffentlicht unter `https://jonathanfuetz.github.io/website_portfolio/`.
+- GitHub Pages ist auf GitHub Actions gestellt; HTTPS ist aktiv.
+- Der Deploy-Workflow bleibt manuell und setzt fuer die Testumgebung `noindex`, solange rechtliche Platzhalter offen sind.
+- Offener Blocker vor echter/finaler Veroeffentlichung: Impressum/Datenschutz finalisieren oder rechtlich pruefen.
 
 ### Meilenstein 9: Eigene Domain
 
@@ -373,7 +375,7 @@ Website_Jonathan/
 - Welche echten Bild-/Asset-Dateien sollen spaeter Platzhalter fuer Portraet, Schwerpunktbilder und Open-Graph-Bild ersetzen?
 - Welche Domain wird später gekauft? Platzhalter bis dahin: `[MEINE-DOMAIN.DE]`.
 - Soll der aktuelle technische SEO-Platzhalter `https://jonathan-fuetz.example` vor Testveröffentlichung durch eine Testdomain ersetzt werden?
-- Soll die vorbereitete GitHub-Pages-Testveroeffentlichung manuell gestartet werden, obwohl Impressum/Datenschutz noch Platzhalter enthalten?
+- GitHub-Pages-Testveroeffentlichung ist gestartet; vor finaler Veroeffentlichung Impressum/Datenschutz pruefen.
 - Welches Open-Graph-Bild darf für Social-Vorschauen verwendet werden?
 - Soll später eine professionelle E-Mail-Adresse wie `kontakt@[MEINE-DOMAIN.DE]` eingerichtet werden?
 - Müssen Impressum und Datenschutzerklärung rechtlich geprüft oder von einem Generator/Anwalt erstellt werden?
