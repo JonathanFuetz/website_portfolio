@@ -4,7 +4,7 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 
 ## Noch Zu Klaeren
 
-- Domain auswaehlen.
+- Domainwunsch `jonathanfuetz.com` ist festgelegt; Verfuegbarkeit, Kauf und DNS-Anbieter sind noch offen.
 - Entscheiden, ob ein PDF-Lebenslauf angeboten wird.
 - Klaeren, ob ein GitHub-Profil fachlich sinnvoll und oeffentlich verlinkbar ist.
 - Noten sind aktuell bewusst nicht auf der Website genannt. Spaeter entscheiden, ob Vordiplom-/Abiturnoten oeffentlich erscheinen sollen.
@@ -12,12 +12,22 @@ Interne Arbeitsliste fuer Freigaben, fehlende Informationen und Formulierungsent
 
 ## SEO Und Rechtliches
 
-- `site.seo.baseUrl` verwendet aktuell `https://jonathan-fuetz.example` als reservierten Platzhalter fuer lokale/noch nicht finale Builds. Nach Domain-Auswahl auf die echte Hauptdomain umstellen.
+- `site.seo.baseUrl` verwendet aktuell `https://jonathan-fuetz.example` als reservierten Platzhalter fuer lokale/noch nicht finale Builds. Nach Kauf und DNS-Vorbereitung auf `https://jonathanfuetz.com` umstellen.
 - `robots.txt` und `sitemap.xml` werden aus Astro-Endpunkten erzeugt. Fuer GitHub Pages werden `ASTRO_SITE=https://jonathanfuetz.github.io` und `ASTRO_BASE=/website_portfolio` gesetzt.
 - Open-Graph-Bild ist noch nicht gesetzt. Nach Freigabe eines Portraets oder neutralen Vorschaubilds `site.seo.defaultImage` ergaenzen.
 - Impressum: vollstaendiger Name, ladungsfaehige Anschrift oder rechtlich zulaessige Alternative, Kontaktmoeglichkeit und Verantwortlichkeit rechtlich pruefen.
 - Datenschutz: Hosting-Anbieter, Serverlog-Hinweise und Umgang mit E-Mail-Kontakt nach Hosting-Auswahl finalisieren.
 - Rechtliche Texte vor Veroeffentlichung pruefen lassen oder mit einem geeigneten Generator/Anwalt final erstellen.
+
+## Fortsetzungsplan Domain Und Finale Veroeffentlichung
+
+- `jonathanfuetz.com` bei einem Registrar auf Verfuegbarkeit und Preis pruefen; noch nicht als gekauft annehmen.
+- Domain nur mit DNS-Zugriff kaufen; fuer die aktuelle Architektur ist kein Website-Baukasten oder separates Hosting-Paket erforderlich.
+- Vor indexierbarer Veroeffentlichung Impressum und Datenschutzerklaerung finalisieren oder rechtlich pruefen lassen.
+- Nach Domainkauf GitHub Pages als Custom Domain konfigurieren und DNS fuer `jonathanfuetz.com` sowie `www.jonathanfuetz.com` setzen.
+- Danach technische Konfiguration aktualisieren: echte Canonical Domain, Sitemap, robots.txt, ggf. CNAME-Datei und Build-Konfiguration fuer die Hauptdomain.
+- Finale QA erst nach DNS/HTTPS: Hauptdomain, `www`-Weiterleitung, interne Links, Meta-Robots, robots.txt, Sitemap, mobile Darstellung und rechtliche Seiten pruefen.
+- `PUBLIC_SITE_NOINDEX` bleibt fuer die Testumgebung aktiv. Indexierung erst deaktivieren, wenn Rechtliches und Domain final freigegeben sind.
 
 ## Testveroeffentlichung
 

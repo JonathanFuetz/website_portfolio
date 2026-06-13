@@ -19,7 +19,7 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Aktuelle Tätigkeit: Werkstudent am Fraunhofer-Institut für Werkzeugmaschinen und Umformtechnik IWU, Abteilung Formgedächtnistechnik.
 - LinkedIn: `https://www.linkedin.com/in/jonathan-fuetz/`.
 - E-Mail-Adresse für die Website: `jonathan.fuetz [at] gmx [dot] net`, bewusst verschleiert und ohne `mailto:`.
-- Eigene Domain: noch auszuwählen.
+- Gewuenschte eigene Domain: `jonathanfuetz.com`, Verfuegbarkeit und Kauf noch offen.
 
 ### Nicht öffentlich verwenden
 
@@ -205,15 +205,17 @@ Website_Jonathan/
 - LinkedIn-Link nur mit explizit bereitgestellter URL.
 - Keine Tracking-Skripte in Version 1.
 - Impressum und Datenschutzerklärung werden eingeplant, aber rechtliche Inhalte müssen später geprüft werden.
-- Domain-Platzhalter: `[MEINE-DOMAIN.DE]`.
+- Ziel-Domain: `jonathanfuetz.com`, noch zu kaufen und per DNS zu verbinden.
+- Domain-Platzhalter bis zur technischen Umstellung: `[MEINE-DOMAIN.DE]`.
 - Technischer SEO-Platzhalter bis zur Domain-Auswahl: `https://jonathan-fuetz.example` in Canonicals, `robots.txt` und `sitemap.xml`.
-- Hauptdomain: `https://[MEINE-DOMAIN.DE]`.
-- Weiterleitung: `https://www.[MEINE-DOMAIN.DE]` leitet auf die Hauptdomain weiter.
+- Geplante Hauptdomain: `https://jonathanfuetz.com`.
+- Geplante Weiterleitung: `https://www.jonathanfuetz.com` leitet auf die Hauptdomain weiter.
 - HTTPS ist Pflicht.
 - Beim Domain-Anbieter:
-  - Domain kaufen.
+  - Verfuegbarkeit von `jonathanfuetz.com` pruefen.
+  - Domain kaufen, falls verfuegbar und preislich akzeptabel.
   - DNS-Einträge setzen, typischerweise `A`/`AAAA` oder `CNAME`, abhängig vom Hosting.
-  - Optional später MX-Einträge für `kontakt@[MEINE-DOMAIN.DE]`.
+  - Optional später MX-Einträge für `kontakt@jonathanfuetz.com`.
 - Beim Hosting-Anbieter:
   - Repository oder Build-Output verbinden.
   - Build-Befehl und Ausgabeordner konfigurieren.
@@ -221,10 +223,21 @@ Website_Jonathan/
   - SSL-Zertifikat aktivieren oder automatisch ausstellen lassen.
   - Redirect von `www` auf die Hauptdomain konfigurieren.
 - Vor Veröffentlichung:
-  - `site.seo.baseUrl`, `robots.txt` und `sitemap.xml` auf die echte Hauptdomain umstellen.
+  - `site.seo.baseUrl`, `robots.txt` und `sitemap.xml` auf `https://jonathanfuetz.com` umstellen.
   - Open-Graph-Bild erst nach Freigabe eines Porträts oder neutralen Vorschaubilds setzen.
   - Impressum mit korrekten Pflichtangaben finalisieren.
   - Datenschutzerklärung nach Hosting-Auswahl um Anbieter, Serverlogs und E-Mail-Kontakt ergänzen.
+
+### Fortsetzungsplan Nach Meilenstein 8
+
+1. Domain-Entscheidung bestaetigen: `jonathanfuetz.com` ist die Ziel-Domain; Verfuegbarkeit und Kauf muessen beim Registrar geprueft werden.
+2. Rechtliche Veroeffentlichungsblocker klaeren: Impressum mit korrekten Pflichtangaben sowie Datenschutzerklaerung fuer GitHub Pages, Serverlogs und E-Mail-Kontakt finalisieren oder rechtlich pruefen lassen.
+3. Domain kaufen: nur Domain/DNS-Zugriff ist erforderlich; kein Website-Baukasten und kein separates Webhosting-Paket noetig, solange GitHub Pages genutzt wird.
+4. DNS vorbereiten: Apex-Domain `jonathanfuetz.com` auf GitHub Pages zeigen lassen; `www.jonathanfuetz.com` als Weiterleitung oder Alias auf die Hauptdomain konfigurieren.
+5. Repository fuer Custom Domain vorbereiten: GitHub-Pages-Custom-Domain setzen, CNAME-Datei bzw. Pages-Konfiguration pruefen, Astro-Build ohne Repository-Basepath fuer die echte Domain vorbereiten.
+6. SEO-Konfiguration umstellen: `site.seo.baseUrl` auf `https://jonathanfuetz.com` setzen, Canonicals, Sitemap und robots.txt fuer die Hauptdomain pruefen.
+7. Finale QA durchfuehren: Build, interne Links, HTTPS, Weiterleitung `www`, Meta-Robots, robots.txt, Sitemap, mobile Darstellung und rechtliche Seiten pruefen.
+8. Erst nach rechtlicher Freigabe indexierbar schalten: `PUBLIC_SITE_NOINDEX` fuer die finale Umgebung deaktivieren; die GitHub-Pages-Testumgebung bleibt bis dahin blockiert.
 
 ## Lebenslauf, LinkedIn Und Inhalte
 
@@ -336,9 +349,9 @@ Website_Jonathan/
 ### Meilenstein 9: Eigene Domain
 
 - Ziel: Spätere Domain sauber verbinden.
-- Aufgaben: `[MEINE-DOMAIN.DE]` auswählen, DNS setzen, Hosting-Domain verbinden, HTTPS prüfen, `www` weiterleiten.
+- Aufgaben: `jonathanfuetz.com` kaufen, DNS setzen, GitHub-Pages-Custom-Domain verbinden, HTTPS prüfen, `www` weiterleiten.
 - Bereiche: Domain-Anbieter, Hosting-Anbieter, Redirect-Konfiguration.
-- Ergebnis: Website läuft unter `https://[MEINE-DOMAIN.DE]`.
+- Ergebnis: Website läuft unter `https://jonathanfuetz.com`.
 - Prüfschritte: DNS-Auflösung, SSL-Zertifikat, Weiterleitung von `www`, Canonical URL.
 - Abnahme: Hauptdomain eindeutig, HTTPS aktiv, `www` zeigt korrekt auf Hauptdomain.
 
@@ -363,7 +376,7 @@ Website_Jonathan/
 - Welche CV-Version darf als Quelle verwendet werden und darf ein PDF-Lebenslauf später angeboten werden?
 - Soll ein PDF-Lebenslauf später öffentlich, nur auf Anfrage oder gar nicht angeboten werden?
 - Soll später statt der aktuell verschleierten GMX-Adresse eine professionelle Domain-E-Mail verwendet werden?
-- Welche Domain soll verwendet werden?
+- Ziel-Domain ist `jonathanfuetz.com`; Verfuegbarkeit, Kauf und DNS-Anbieter sind noch zu klaeren.
 - LinkedIn-URL `https://www.linkedin.com/in/jonathan-fuetz/` ist aktuell freigegeben.
 - Welche Projekte dürfen öffentlich beschrieben werden und in welchem Detailgrad?
 - Welche Bilder, technischen Daten, Zeichnungen, Logos oder Arbeitsergebnisse sind freigegeben?
@@ -373,11 +386,11 @@ Website_Jonathan/
 - Soll ein Porträtfoto verwendet werden, und liegt dafür eine webtaugliche Version vor?
 - Weitere grafische Feinschliffe werden spaeter behandelt, wenn Inhalt, Rechtliches, Domain/SEO und Veroeffentlichung geklaert sind.
 - Welche echten Bild-/Asset-Dateien sollen spaeter Platzhalter fuer Portraet, Schwerpunktbilder und Open-Graph-Bild ersetzen?
-- Welche Domain wird später gekauft? Platzhalter bis dahin: `[MEINE-DOMAIN.DE]`.
+- Domainwunsch: `jonathanfuetz.com`; Kauf noch offen. Platzhalter bis zur technischen Umstellung: `[MEINE-DOMAIN.DE]`.
 - Soll der aktuelle technische SEO-Platzhalter `https://jonathan-fuetz.example` vor Testveröffentlichung durch eine Testdomain ersetzt werden?
 - GitHub-Pages-Testveroeffentlichung ist gestartet; vor finaler Veroeffentlichung Impressum/Datenschutz pruefen.
 - Welches Open-Graph-Bild darf für Social-Vorschauen verwendet werden?
-- Soll später eine professionelle E-Mail-Adresse wie `kontakt@[MEINE-DOMAIN.DE]` eingerichtet werden?
+- Soll später eine professionelle E-Mail-Adresse wie `kontakt@jonathanfuetz.com` eingerichtet werden?
 - Müssen Impressum und Datenschutzerklärung rechtlich geprüft oder von einem Generator/Anwalt erstellt werden?
 
 ## Annahmen Und Defaults
@@ -386,5 +399,5 @@ Website_Jonathan/
 - Inhalte: getrennt von Layout und Code, bevorzugt Markdown/JSON.
 - Kein CMS, kein Kontaktformular, kein Tracking in Version 1.
 - GitHub wird bevorzugt, aber der statische Build bleibt zu anderen Hostern portierbar.
-- Canonical Domain später: `https://[MEINE-DOMAIN.DE]`, `www` leitet weiter.
+- Canonical Domain später: `https://jonathanfuetz.com`, `www` leitet weiter.
 - Persönliche Daten werden nur nach expliziter Freigabe veröffentlicht.
