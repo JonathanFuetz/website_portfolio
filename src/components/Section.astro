@@ -1,0 +1,9 @@
+---
+const { id, title, eyebrow } = Astro.props;
+---
+
+<section class="section" id={id} aria-labelledby={`${id}-title`}>
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  {title && <h2 id={`${id}-title`}>{title}</h2>}
+  <slot />
+</section>

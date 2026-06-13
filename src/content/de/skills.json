@@ -1,0 +1,32 @@
+{
+  "sectionTitle": "Technische Kompetenzen",
+  "groups": [
+    {
+      "group": "CAD/CAE",
+      "items": [
+        "[PLATZHALTER: CAD-Tool]",
+        "[PLATZHALTER: CAE- oder Simulationswerkzeug]"
+      ]
+    },
+    {
+      "group": "Programmierung und Daten",
+      "items": [
+        "[PLATZHALTER: Programmiersprache]",
+        "[PLATZHALTER: Analyse- oder Automatisierungstool]"
+      ]
+    },
+    {
+      "group": "Fertigung und Entwicklung",
+      "items": [
+        "[PLATZHALTER: Fertigungsverfahren]",
+        "[PLATZHALTER: Entwicklungs- oder Testmethode]"
+      ]
+    },
+    {
+      "group": "Sprachen",
+      "items": [
+        "[PLATZHALTER: Sprache und belegbarer Stand]"
+      ]
+    }
+  ]
+}

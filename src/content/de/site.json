@@ -1,0 +1,90 @@
+{
+  "brand": "[PLATZHALTER: Name]",
+  "homeLabel": "Start",
+  "navigationLabel": "Hauptnavigation",
+  "nav": [
+    {
+      "label": "Profil",
+      "href": "/#profil"
+    },
+    {
+      "label": "Ausbildung",
+      "href": "/#ausbildung"
+    },
+    {
+      "label": "Erfahrung",
+      "href": "/#erfahrung"
+    },
+    {
+      "label": "Kompetenzen",
+      "href": "/#kompetenzen"
+    },
+    {
+      "label": "Projekte",
+      "href": "/#projekte"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/#kontakt"
+    }
+  ],
+  "legalLinks": [
+    {
+      "label": "Impressum",
+      "href": "/impressum/"
+    },
+    {
+      "label": "Datenschutz",
+      "href": "/datenschutz/"
+    }
+  ],
+  "footer": {
+    "note": "Statische Portfolio-Website ohne Tracking und ohne Kontaktformular.",
+    "copyright": "(c) 2026 [PLATZHALTER: Name]"
+  },
+  "legal": {
+    "impressum": {
+      "title": "Impressum",
+      "metaDescription": "Impressum fuer die Portfolio-Website.",
+      "intro": "Diese Seite enthaelt Platzhalter fuer die spaeter rechtlich zu pruefenden Pflichtangaben.",
+      "sections": [
+        {
+          "title": "Angaben gemaess rechtlicher Pflicht",
+          "items": [
+            "[PLATZHALTER: Vollstaendiger Name]",
+            "[PLATZHALTER: Anschrift oder rechtlich zulaessige Alternative]",
+            "[PLATZHALTER: Kontaktmoeglichkeit]"
+          ]
+        },
+        {
+          "title": "Verantwortlich fuer den Inhalt",
+          "items": [
+            "[PLATZHALTER: Verantwortliche Person]",
+            "[PLATZHALTER: Inhaltliche Zustaendigkeit]"
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklaerung",
+      "metaDescription": "Datenschutzhinweise fuer die statische Portfolio-Website.",
+      "intro": "Diese statische Website ist ohne Tracking, Analytics und Kontaktformular geplant.",
+      "sections": [
+        {
+          "title": "Grundsatz",
+          "items": [
+            "Es werden keine Tracking-Skripte eingebunden.",
+            "Es gibt kein Kontaktformular.",
+            "[PLATZHALTER: Hosting-Anbieter und Serverlog-Hinweise nach Auswahl ergaenzen]"
+          ]
+        },
+        {
+          "title": "Kontaktaufnahme",
+          "items": [
+            "[PLATZHALTER: E-Mail-Kontakt und Umgang mit freiwillig uebermittelten Daten beschreiben]"
+          ]
+        }
+      ]
+    }
+  }
+}

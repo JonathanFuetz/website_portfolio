@@ -1,0 +1,29 @@
+---
+import site from "../content/de/site.json";
+import "../styles/global.css";
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+
+const {
+  title = "Portfolio in Vorbereitung",
+  description = "Technische Portfolio-Website in Vorbereitung."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+    <Header site={site} />
+    <main class="shell" id="inhalt">
+      <slot />
+    </main>
+    <Footer site={site} />
+  </body>
+</html>

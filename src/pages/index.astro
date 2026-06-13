@@ -1,0 +1,101 @@
+---
+import BaseLayout from "../components/BaseLayout.astro";
+import Section from "../components/Section.astro";
+import * as educationContent from "../content/de/education.md";
+import * as experienceContent from "../content/de/experience.md";
+import * as profileContent from "../content/de/profile.md";
+import projects from "../content/de/projects.json";
+import skills from "../content/de/skills.json";
+
+const profile = profileContent.frontmatter;
+const education = educationContent.frontmatter;
+const experience = experienceContent.frontmatter;
+---
+
+<BaseLayout title={profile.pageTitle} description={profile.metaDescription}>
+  <section class="intro" id="profil" aria-labelledby="page-title">
+    <p class="eyebrow">{profile.eyebrow}</p>
+    <h1 id="page-title">{profile.name}</h1>
+    <p class="headline">{profile.headline}</p>
+    <p>{profile.summary}</p>
+    <ul class="tag-list" aria-label={profile.focusLabel}>
+      {profile.focus.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <Section id="ausbildung" title={education.sectionTitle}>
+    <div class="stack">
+      {
+        education.items.map((item) => (
+          <article class="entry">
+            <p class="entry-meta">{item.period}</p>
+            <h3>{item.title}</h3>
+            <p>{item.institution}</p>
+            <ul>
+              {item.details.map((detail) => <li>{detail}</li>)}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="erfahrung" title={experience.sectionTitle}>
+    <div class="stack">
+      {
+        experience.items.map((item) => (
+          <article class="entry">
+            <p class="entry-meta">{item.period}</p>
+            <h3>{item.role}</h3>
+            <p>{item.organization}</p>
+            <ul>
+              {item.details.map((detail) => <li>{detail}</li>)}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="kompetenzen" title={skills.sectionTitle}>
+    <div class="grid">
+      {
+        skills.groups.map((skillGroup) => (
+          <article class="entry">
+            <h3>{skillGroup.group}</h3>
+            <ul>
+              {skillGroup.items.map((skill) => <li>{skill}</li>)}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="projekte" title={projects.sectionTitle}>
+    <div class="grid">
+      {
+        projects.items.map((project) => (
+          <article class="entry">
+            <h3>{project.title}</h3>
+            <p>{project.context}</p>
+            <ul
+              class="tag-list"
+              aria-label={`${projects.methodLabel} fuer ${project.title}`}
+            >
+              {project.methods.map((method) => <li>{method}</li>)}
+            </ul>
+            <p>{project.result}</p>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section id="kontakt" title={profile.contact.sectionTitle}>
+    <p>{profile.contact.emailLabel}</p>
+    <p>{profile.contact.emailHint}</p>
+    <p>{profile.contact.linkedIn}</p>
+    <p>{profile.contact.location}</p>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+const { site } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label={site.homeLabel}>{site.brand}</a>
+    <nav class="nav" aria-label={site.navigationLabel}>
+      {
+        site.nav.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))
+      }
+      {
+        site.legalLinks.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
