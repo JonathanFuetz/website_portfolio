@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../components/BaseLayout.astro";
 import FocusCard from "../components/FocusCard.astro";
+import HeroVisual from "../components/HeroVisual.astro";
 import Section from "../components/Section.astro";
 import SkillGroup from "../components/SkillGroup.astro";
+import StationCard from "../components/StationCard.astro";
+import Timeline from "../components/Timeline.astro";
 import * as educationContent from "../content/de/education.md";
 import * as experienceContent from "../content/de/experience.md";
 import * as profileContent from "../content/de/profile.md";
@@ -16,70 +19,56 @@ const education = educationContent.frontmatter;
 const experience = experienceContent.frontmatter;
 ---
 
-<BaseLayout title={profile.pageTitle} description={profile.metaDescription}>
-  <section class="intro" id="profil" aria-labelledby="page-title">
-    <p class="eyebrow">{profile.eyebrow}</p>
-    <h1 id="page-title">{profile.name}</h1>
-    <p class="headline">{profile.headline}</p>
-    <p>{profile.summary}</p>
-    <ul class="tag-list" aria-label={profile.focusLabel}>
-      {profile.focus.map((item) => <li>{item}</li>)}
-    </ul>
-  </section>
+<BaseLayout title={profile.pageTitle} description={profile.metaDescription} path="/">
+  <HeroVisual profile={profile} />
 
-  <Section id="ausbildung" title={education.sectionTitle}>
-    <div class="stack">
+  <Section id="ausbildung" title={education.sectionTitle} eyebrow="Akademischer Rahmen">
+    <Timeline label={education.sectionTitle}>
       {
         education.items.map((item) => (
-          <article class="entry">
-            <p class="entry-meta">{item.period}</p>
-            <h3>{item.title}</h3>
-            <p>{item.institution}</p>
-            <ul>
-              {item.details.map((detail) => <li>{detail}</li>)}
-            </ul>
-          </article>
+          <StationCard
+            period={item.period}
+            title={item.title}
+            subtitle={item.institution}
+            details={item.details}
+          />
         ))
       }
-    </div>
+    </Timeline>
   </Section>
 
-  <Section id="erfahrung" title={experience.sectionTitle}>
-    <div class="stack">
+  <Section id="erfahrung" title={experience.sectionTitle} eyebrow="Praxisstationen" tone="timeline">
+    <Timeline label={experience.sectionTitle}>
       {
         experience.items.map((item) => (
-          <article class="entry">
-            <p class="entry-meta">{item.period}</p>
-            <h3>{item.role}</h3>
-            <p>{item.organization}</p>
-            <ul>
-              {item.details.map((detail) => <li>{detail}</li>)}
-            </ul>
-          </article>
+          <StationCard
+            period={item.period}
+            title={item.role}
+            subtitle={item.organization}
+            details={item.details}
+          />
         ))
       }
-    </div>
+    </Timeline>
   </Section>
 
-  <Section id="weitere-taetigkeiten" title={additionalActivities.sectionTitle}>
-    <div class="stack">
+  <Section id="weitere-taetigkeiten" title={additionalActivities.sectionTitle} eyebrow="Ergänzend">
+    <Timeline label={additionalActivities.sectionTitle}>
       {
         additionalActivities.items.map((item) => (
-          <article class="entry">
-            <p class="entry-meta">{item.period}</p>
-            <h3>{item.role}</h3>
-            <p>{item.organization}</p>
-            <ul>
-              {item.details.map((detail) => <li>{detail}</li>)}
-            </ul>
-          </article>
+          <StationCard
+            period={item.period}
+            title={item.role}
+            subtitle={item.organization}
+            details={item.details}
+          />
         ))
       }
-    </div>
+    </Timeline>
   </Section>
 
-  <Section id="kompetenzen" title={skills.sectionTitle}>
-    <div class="grid">
+  <Section id="kompetenzen" title={skills.sectionTitle} eyebrow="Werkzeugfelder">
+    <div class="grid grid--skills">
       {
         skills.groups.map((skillGroup) => (
           <SkillGroup group={skillGroup} />
@@ -88,26 +77,28 @@ const experience = experienceContent.frontmatter;
     </div>
   </Section>
 
-  <Section id="schwerpunkte" title={focusAreas.sectionTitle}>
-    <div class="grid">
+  <Section id="schwerpunkte" title={focusAreas.sectionTitle} eyebrow="Anwendungsnah" tone="featured">
+    <div class="grid grid--focus">
       {
-        focusAreas.items.map((focus) => (
-          <FocusCard focus={focus} labels={focusAreas.labels} />
+        focusAreas.items.map((focus, index) => (
+          <FocusCard focus={focus} labels={focusAreas.labels} index={index} />
         ))
       }
     </div>
   </Section>
 
-  <Section id="interessen" title={interests.sectionTitle}>
+  <Section id="interessen" title={interests.sectionTitle} eyebrow="Persönlich">
     <ul class="tag-list" aria-label="Interessen">
       {interests.items.map((interest) => <li>{interest}</li>)}
     </ul>
   </Section>
 
-  <Section id="kontakt" title={profile.contact.sectionTitle}>
-    <p>{profile.contact.emailLabel}</p>
-    <p>{profile.contact.emailHint}</p>
-    <p>{profile.contact.linkedIn}</p>
-    <p>{profile.contact.location}</p>
+  <Section id="kontakt" title={profile.contact.sectionTitle} eyebrow="Erreichbarkeit" tone="contact">
+    <div class="contact-panel">
+      <p>{profile.contact.emailLabel}</p>
+      <p>{profile.contact.emailHint}</p>
+      <p>{profile.contact.linkedIn}</p>
+      <p>{profile.contact.location}</p>
+    </div>
   </Section>
 </BaseLayout>

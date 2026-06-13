@@ -18,7 +18,7 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Vertiefung: Luft- und Raumfahrttechnik.
 - Aktuelle Tätigkeit: Werkstudent am Fraunhofer-Institut für Werkzeugmaschinen und Umformtechnik IWU, Abteilung Formgedächtnistechnik.
 - LinkedIn: `https://www.linkedin.com/in/jonathan-fuetz/`.
-- E-Mail-Adresse für die Website: noch festzulegen.
+- E-Mail-Adresse für die Website: `jonathan.fuetz [at] gmx [dot] net`, bewusst verschleiert und ohne `mailto:`.
 - Eigene Domain: noch auszuwählen.
 
 ### Nicht öffentlich verwenden
@@ -37,9 +37,8 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Besonders zu prüfen:
   - Soll das Kurzprofil stärker auf Aerodynamik, CFD und Antriebstechnik ausgerichtet werden?
   - Welche Bilder, technischen Daten und Projektdetails zum Fraunhofer-IWU-Demonstrator dürfen öffentlich gezeigt werden?
-  - Wie lautet der aktuelle Status des Deutschlandstipendiums?
   - Soll der PDF-Lebenslauf öffentlich downloadbar sein?
-  - Welche Nebenjobs sollen auf der Website erscheinen, wenn überhaupt?
+  - Welche weiteren Tätigkeiten oder Nebenjobs sollen später zusätzlich auf der Website erscheinen?
 
 ## Struktur, Inhalte Und Gestaltung
 
@@ -67,8 +66,8 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Ausbildung mit belegbaren Angaben.
 - Berufserfahrung mit Zeiträumen, Organisationen, Tätigkeiten und technischen Schwerpunkten.
 - Technische Kompetenzen mit realem Erfahrungsgrad, ohne erfundene Einstufungen.
-- 2-4 Projekte oder Projektplatzhalter, falls noch keine veröffentlichbaren Details vorliegen.
-- Kontaktbereich mit geschützter E-Mail-Strategie.
+- 2-4 technische Schwerpunkte aus Erfahrungsstationen, falls noch keine separat veröffentlichbaren Projekt-Detailseiten vorliegen.
+- Kontaktbereich mit geschützter, teilverschleierter E-Mail-Strategie.
 - Impressum und Datenschutzerklärung als sichtbare Navigationseinträge oder Footer-Links.
 
 ### Geplante persönliche Inhalte für Version 1
@@ -76,8 +75,8 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 - Rollen-/Profilheadline, Arbeitsfassung: "Maschinenbaustudent mit Vertiefung Luft- und Raumfahrttechnik und praktischer Erfahrung in Konstruktion, Mess- und Steuerungstechnik sowie Python-basierter Bildverarbeitung."
 - Kurzprofil, Arbeitsfassung: Studium Maschinenbau mit Vertiefung Luft- und Raumfahrttechnik an der TU Dresden; Werkstudent am Fraunhofer IWU in der Formgedächtnistechnik; technische Demonstratoren, CAD-Konstruktion, Mess- und Steuerungstechnik; zusätzlich Python/OpenCV, Arduino-Testumgebungen sowie experimentelle Werkstoff- und Klebuntersuchungen.
 - Ausbildung:
-  - Technische Universität Dresden, Diplom Maschinenbau, Vertiefung Luft- und Raumfahrttechnik, seit 10/2023, Zwischenzeugnis/Vordiplom Semester 1-4: Note 1,2.
-  - Georg-Cantor-Gymnasium Halle (Saale), Abitur 09/2015-06/2023, Note 1,1, MINT-EC-Zertifikat, Junior-Ingenieur-Akademie 2018-2020.
+  - Technische Universität Dresden, Diplom Maschinenbau, Vertiefung Luft- und Raumfahrttechnik, seit 10/2023; relevante Module: Aerodynamik, numerische Strömungsmechanik (CFD), Luftfahrtantriebe.
+  - Georg-Cantor-Gymnasium Halle (Saale), Abitur 09/2015-06/2023, MINT-EC-Zertifikat, Junior-Ingenieur-Akademie 2018-2020.
 - Berufserfahrung:
   - Fraunhofer IWU, Dresden, seit 01/2025, Werkstudent Abteilung Formgedächtnistechnik.
   - Hannweber Engineering, Dresden, 08/2024-10/2024, freiwilliges Praktikum.
@@ -90,9 +89,12 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
   - Office: Microsoft Office.
   - Sprachen: Deutsch Muttersprache, Englisch B2+, Französisch B1.
 - Stipendien/Auszeichnungen:
-  - Deutschlandstipendium ab 10/2024, aktueller Status noch prüfen.
+  - Deutschlandstipendium seit 10/2024.
   - MINT-Stipendium der Gesellschaft von Freunden und Förderern der TU Dresden e. V., 10/2023-09/2024.
-- Interessen optional und nachgeordnet: 3D-Druck, Klavierspielen, Leichtathletik, Kraftsport.
+- Interessen optional und nachgeordnet: 3D-Druck, Klavierspielen, Leichtathletik, Kraftsport, Rennrad.
+- Weitere Tätigkeiten:
+  - CITY-CAR Autovermietung GmbH auf der Website-Hauptseite.
+  - REICHE GROUP aktuell nicht auf der Website-Hauptseite.
 
 ### Kandidaten Für Technische Schwerpunkte
 
@@ -120,12 +122,18 @@ Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Die
 
 ### Designrichtung
 
-- Stil: hell, präzise, modern, technisch, nicht verspielt.
-- Typografie: gut lesbare serifenlose Schrift, klare Hierarchie, keine übergroßen Marketing-Headlines.
-- Farben: neutrales Grundlayout, dunkle Textfarbe, helle Flächen, ein technischer Akzentton wie Blau, Petrol oder Stahlgrün.
-- Abstände: großzügig, aber kompakt genug für schnelle Prüfung durch Recruiter.
-- Bildsprache: professionelles Porträt, optional technische Projektbilder; keine generischen Stock-Motive.
-- Komponenten: klare Abschnitte, kompakte Kompetenzlisten, Schwerpunktkarten mit maximal 8px Radius, keine dekorativen Effekte ohne Informationswert.
+- Aktuelle Basis: hell, präzise, modern, technisch, nicht verspielt.
+- Geplante Design-Verfeinerung: moderner persönlicher Auftritt mit seriös-technischer Aerospace-&-Engineering-Ästhetik.
+- Zielwirkung: professioneller, visueller und eigenständiger als ein digitaler Lebenslauf, aber weiterhin glaubwürdig, übersichtlich und bewerbungstauglich.
+- Nicht gewünscht: Kreativagentur-Optik, Gaming-Optik, übertrieben futuristische Effekte, Weltraumklischees, Template-Kopie.
+- Referenz nur für Hierarchie, Seitenrhythmus und visuelle Wirkung: `https://anhlexuan.com/`; keine Übernahme von Farbwelt, Quellcode, Inhalten oder Template.
+- Ziel-Farbwelt für die Designiteration: tiefes Navy als Grundfläche, schieferblaue Flächen und Karten, gebrochenes Weiß für Haupttexte, kühles Grau für Sekundärtexte, klares Luftfahrtblau oder gedecktes Cyan als primärer Akzent, optional zurückhaltendes Stahlgrün.
+- Mögliche Ausgangswerte: Hintergrund `#08111F`, Abschnittsflächen `#0E1A2B`, Karten `#142238`, Haupttext `#F1F5F9`, Sekundärtext `#9CAABD`, Akzentblau `#38A6E8`, Zweitakzent `#56B3A6`; Werte dürfen für Kontrast und Gesamtwirkung angepasst werden.
+- Typografie: modern, technisch wirkend, sehr gut lesbar, ohne dekorative Science-Fiction-Schrift; möglichst lokal/systemnah und datenschutzfreundlich.
+- Bildsprache: Platz für professionelles Porträt und später technische Projekt-/Schwerpunktbilder; keine generischen Flugzeug-, Weltraum- oder Stock-Motive.
+- Komponenten: stärkere Abschnittstrennung, abwechslungsreicher Seitenrhythmus, größere Schwerpunktkarten mit Bild-/Placeholderbereich, Zeitstrahl oder strukturierte Stationen für Erfahrung/Ausbildung, Kompetenzgruppen nach Anwendungskontext.
+- Animationen: dezente Scroll-/Hover-Effekte, `prefers-reduced-motion` berücksichtigen, keine schweren Parallax-, Partikel- oder 3D-Effekte.
+- Umsetzung nur nach separatem Designvorschlag und Freigabe; Inhalte und Formulierungen bleiben stabil.
 
 ## Technische Empfehlung
 
@@ -198,6 +206,7 @@ Website_Jonathan/
 - Keine Tracking-Skripte in Version 1.
 - Impressum und Datenschutzerklärung werden eingeplant, aber rechtliche Inhalte müssen später geprüft werden.
 - Domain-Platzhalter: `[MEINE-DOMAIN.DE]`.
+- Technischer SEO-Platzhalter bis zur Domain-Auswahl: `https://jonathan-fuetz.example` in Canonicals, `robots.txt` und `sitemap.xml`.
 - Hauptdomain: `https://[MEINE-DOMAIN.DE]`.
 - Weiterleitung: `https://www.[MEINE-DOMAIN.DE]` leitet auf die Hauptdomain weiter.
 - HTTPS ist Pflicht.
@@ -211,6 +220,11 @@ Website_Jonathan/
   - Custom Domain hinterlegen.
   - SSL-Zertifikat aktivieren oder automatisch ausstellen lassen.
   - Redirect von `www` auf die Hauptdomain konfigurieren.
+- Vor Veröffentlichung:
+  - `site.seo.baseUrl`, `robots.txt` und `sitemap.xml` auf die echte Hauptdomain umstellen.
+  - Open-Graph-Bild erst nach Freigabe eines Porträts oder neutralen Vorschaubilds setzen.
+  - Impressum mit korrekten Pflichtangaben finalisieren.
+  - Datenschutzerklärung nach Hosting-Auswahl um Anbieter, Serverlogs und E-Mail-Kontakt ergänzen.
 
 ## Lebenslauf, LinkedIn Und Inhalte
 
@@ -219,7 +233,7 @@ Website_Jonathan/
 - Doppelte oder widersprüchliche Angaben werden vor Umsetzung markiert.
 - Sensible Angaben wie private Adresse, Telefonnummer, Geburtsdatum oder vollständiger PDF-Lebenslauf werden nicht ohne Freigabe veröffentlicht.
 - Projektinhalte werden auf Vertraulichkeit geprüft: keine internen Daten, keine proprietären Ergebnisse, keine Arbeitgebergeheimnisse.
-- Der Status des Deutschlandstipendiums ist widersprüchlich beziehungsweise unbestätigt und muss vor Veröffentlichung vereinheitlicht werden.
+- Noten sind aktuell bewusst nicht auf der Website-Hauptseite genannt.
 - Die Website-Texte sollen sachlich und technisch präzise bleiben, nicht übertrieben werblich.
 
 ## Meilensteine Mit Abnahme
@@ -260,6 +274,16 @@ Website_Jonathan/
 - Prüfschritte: Sichtprüfung bei typischen Viewports, Textüberläufe, Kontrast.
 - Abnahme: Keine verspielte Agentur-Optik, alle Texte lesbar, keine Layoutüberlappungen.
 
+### Meilenstein 4b: Visuelle Design-Verfeinerung
+
+- Ziel: Die Website optisch von einem einfachen digitalen Lebenslauf zu einem hochwertigen persönlichen Aerospace-&-Engineering-Auftritt weiterentwickeln.
+- Aufgaben: Designvorschlag erstellen, danach bei Freigabe dunkles Designsystem, Hero-Inszenierung, visuelle Abschnittstrennung, moderne Schwerpunktkarten, Zeitstrahl-/Stationenlayout, Kompetenzdarstellung und dezente Bewegungen umsetzen.
+- Bereiche: `src/styles/tokens.css`, `src/styles/global.css`, `src/components/`, `src/pages/index.astro`, optional `public/images/`.
+- Ergebnis: Visuell eigenständiger Onepager mit stärkerem Seitenrhythmus, klarer Hierarchie und hochwertiger technischer Wirkung.
+- Prüfschritte: Desktop/Tablet/Mobile-Sichtprüfung, Kontrast, Fokuszustände, `prefers-reduced-motion`, keine Inhaltsänderungen, keine neuen privaten Daten, keine unnötigen Abhängigkeiten.
+- Abnahme: Design wirkt professionell, technisch und bewerbungstauglich; bleibt performant, barrierearm und ohne Template-Kopie.
+- Status: umgesetzt mit Platzhaltern fuer Portraet und Schwerpunktbilder; echte Assets bleiben spaeter zu liefern.
+
 ### Meilenstein 5: Kompetenzen Und Technische Schwerpunkte
 
 - Ziel: Technische Fähigkeiten und praxisnahe Schwerpunkte prüfbar darstellen.
@@ -281,11 +305,11 @@ Website_Jonathan/
 ### Meilenstein 6: Datenschutz, SEO Und Metadaten
 
 - Ziel: Website auffindbar, teilbar und datenschutzarm machen.
-- Aufgaben: Seitentitel, Meta Description, Open Graph, Favicon-Platzhalter, robots/sitemap, rechtliche Seiten.
+- Aufgaben: Seitentitel, Meta Description, Canonical URL, Open Graph, Twitter Card, Favicon-Platzhalter, robots/sitemap, rechtliche Seiten.
 - Bereiche: Layout/Head-Komponente, `public/`, Seitenmetadaten.
 - Ergebnis: Solide SEO-Basis und Social-Media-Vorschau.
-- Prüfschritte: HTML-Metadaten prüfen, keine Tracker, keine unnötig auslesbaren Kontaktdaten.
-- Abnahme: Jede Seite hat Titel und Beschreibung, rechtliche Seiten sind verlinkt, Datenschutzprinzipien eingehalten.
+- Prüfschritte: HTML-Metadaten prüfen, keine Tracker, keine unnötig auslesbaren Kontaktdaten, `robots.txt` und `sitemap.xml` prüfen.
+- Abnahme: Jede Seite hat Titel, Beschreibung, Canonical URL und Social-Metadaten; rechtliche Seiten sind verlinkt; Datenschutzprinzipien eingehalten; Domain-Platzhalter und rechtliche Lücken sind dokumentiert.
 
 ### Meilenstein 7: Qualitätssicherung
 
@@ -294,7 +318,7 @@ Website_Jonathan/
 - Bereiche: Gesamte Website.
 - Ergebnis: Fehlerarme Version für Testveröffentlichung.
 - Prüfschritte: Desktop/Mobile, Tastaturnavigation, Kontrast, Ladezeit, interne Links.
-- Abnahme: Build erfolgreich, keine offensichtlichen Barrierefreiheitsfehler, gute Performance ohne unnötige Skripte.
+- Abnahme: Build erfolgreich, interne Links funktionieren, keine offensichtlichen Barrierefreiheitsfehler, gute Performance ohne unnötige Skripte, keine privaten Daten/Noten auf der Startseite, rechtliche Platzhalter als Veröffentlichungsblocker dokumentiert.
 
 ### Meilenstein 8: Testveröffentlichung
 
@@ -304,6 +328,8 @@ Website_Jonathan/
 - Ergebnis: Test-URL ist öffentlich erreichbar.
 - Prüfschritte: Online-Aufruf, HTTPS, Assets, mobile Darstellung, rechtliche Seiten.
 - Abnahme: Website funktioniert unter Test-URL vollständig und ohne lokale Abhängigkeiten.
+- Status: technisch vorbereitet fuer GitHub Pages unter `https://jonathanfuetz.github.io/website_portfolio/`, aber nicht automatisch veroeffentlicht. Der Deploy-Workflow ist manuell und setzt fuer die Testumgebung `noindex`, solange rechtliche Platzhalter offen sind.
+- Blocker vor oeffentlicher Testfreischaltung: GitHub Pages in den Repository-Einstellungen auf GitHub Actions stellen, Impressum/Datenschutz bewusst pruefen oder Platzhalterrisiko akzeptieren, Workflow manuell starten.
 
 ### Meilenstein 9: Eigene Domain
 
@@ -334,17 +360,21 @@ Website_Jonathan/
 - Soll die deutsche Kurzbezeichnung aus `PROFILE_CONTENT_Jonathan_Fuetz.md` verwendet oder stärker auf Aerodynamik, CFD und Antriebstechnik ausgerichtet werden?
 - Welche CV-Version darf als Quelle verwendet werden und darf ein PDF-Lebenslauf später angeboten werden?
 - Soll ein PDF-Lebenslauf später öffentlich, nur auf Anfrage oder gar nicht angeboten werden?
-- Welche E-Mail-Adresse darf öffentlich erscheinen oder geschützt dargestellt werden?
+- Soll später statt der aktuell verschleierten GMX-Adresse eine professionelle Domain-E-Mail verwendet werden?
 - Welche Domain soll verwendet werden?
-- Darf die LinkedIn-URL `https://www.linkedin.com/in/jonathan-fuetz/` öffentlich verlinkt werden?
+- LinkedIn-URL `https://www.linkedin.com/in/jonathan-fuetz/` ist aktuell freigegeben.
 - Welche Projekte dürfen öffentlich beschrieben werden und in welchem Detailgrad?
 - Welche Bilder, technischen Daten, Zeichnungen, Logos oder Arbeitsergebnisse sind freigegeben?
 - Gibt es Arbeitgeber-, Hochschul- oder Projektdaten, die vertraulich bleiben müssen?
-- Sollen Nebenjobs bei CITY-CAR und REICHE GROUP auf der Website erscheinen oder bewusst weggelassen werden?
-- Wie lautet der aktuelle Status des Deutschlandstipendiums?
+- CITY-CAR erscheint aktuell auf der Website-Hauptseite; REICHE GROUP bleibt aktuell ausgeschlossen.
 - Gibt es relevante Studienmodule, fachliche Interessen oder Zielrollen, die ausdrücklich genannt werden sollen?
 - Soll ein Porträtfoto verwendet werden, und liegt dafür eine webtaugliche Version vor?
+- Weitere grafische Feinschliffe werden spaeter behandelt, wenn Inhalt, Rechtliches, Domain/SEO und Veroeffentlichung geklaert sind.
+- Welche echten Bild-/Asset-Dateien sollen spaeter Platzhalter fuer Portraet, Schwerpunktbilder und Open-Graph-Bild ersetzen?
 - Welche Domain wird später gekauft? Platzhalter bis dahin: `[MEINE-DOMAIN.DE]`.
+- Soll der aktuelle technische SEO-Platzhalter `https://jonathan-fuetz.example` vor Testveröffentlichung durch eine Testdomain ersetzt werden?
+- Soll die vorbereitete GitHub-Pages-Testveroeffentlichung manuell gestartet werden, obwohl Impressum/Datenschutz noch Platzhalter enthalten?
+- Welches Open-Graph-Bild darf für Social-Vorschauen verwendet werden?
 - Soll später eine professionelle E-Mail-Adresse wie `kontakt@[MEINE-DOMAIN.DE]` eingerichtet werden?
 - Müssen Impressum und Datenschutzerklärung rechtlich geprüft oder von einem Generator/Anwalt erstellt werden?
 

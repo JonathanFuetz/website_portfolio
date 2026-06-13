@@ -3,6 +3,7 @@ const { group } = Astro.props;
 ---
 
 <article class="entry skill-group">
+  <span class="skill-group__marker" aria-hidden="true"></span>
   <h3>{group.group}</h3>
   {group.summary && <p>{group.summary}</p>}
   <ul class="tag-list" aria-label={`Kenntnisse in ${group.group}`}>

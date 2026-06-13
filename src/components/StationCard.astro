@@ -1,0 +1,14 @@
+---
+const { period, title, subtitle, details } = Astro.props;
+---
+
+<li class="timeline__item">
+  <article class="entry station-card">
+    <p class="entry-meta">{period}</p>
+    <h3>{title}</h3>
+    <p>{subtitle}</p>
+    <ul>
+      {details.map((detail) => <li>{detail}</li>)}
+    </ul>
+  </article>
+</li>

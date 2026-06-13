@@ -1,9 +1,11 @@
 ---
-const { id, title, eyebrow } = Astro.props;
+const { id, title, eyebrow, tone = "standard" } = Astro.props;
 ---
 
-<section class="section" id={id} aria-labelledby={`${id}-title`}>
-  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-  {title && <h2 id={`${id}-title`}>{title}</h2>}
+<section class:list={["section", `section--${tone}`]} id={id} aria-labelledby={`${id}-title`}>
+  <div class="section__heading">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    {title && <h2 id={`${id}-title`}>{title}</h2>}
+  </div>
   <slot />
 </section>

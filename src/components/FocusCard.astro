@@ -1,8 +1,11 @@
 ---
-const { focus, labels } = Astro.props;
+const { focus, labels, index = 0 } = Astro.props;
 ---
 
 <article class="entry focus-card">
+  <div class="focus-card__media" aria-hidden="true">
+    <span>{String(index + 1).padStart(2, "0")}</span>
+  </div>
   <div class="entry-heading">
     <p class="entry-meta">{focus.origin}</p>
     {focus.status && <span class="status-badge">{focus.status}</span>}

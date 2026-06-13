@@ -66,3 +66,35 @@ Meilenstein 5 verfeinert Kompetenzen und technische Schwerpunkte:
 - keine Prozentwerte oder frei erfundenen Kompetenzniveaus
 - freigegebene Entscheidungen zu E-Mail, Studienmodulen, Stipendien, CITY-CAR und Interessen sind eingepflegt
 - Noten, private Kontaktdaten und REICHE GROUP bleiben von der Website-Hauptseite ausgeschlossen
+
+Meilenstein 6 setzt SEO- und Metadaten-Grundlagen:
+
+- Seitentitel, Meta Description, Canonical URL und Open Graph im `BaseLayout`
+- Favicon-Platzhalter unter `public/favicon.svg`
+- `robots.txt` und `sitemap.xml` mit Domain-Platzhalter
+- offene rechtliche Angaben und Domain-Themen in `CONTENT_REVIEW.md`
+
+Meilenstein 7 prueft die Qualitaet:
+
+- Build, interne Links, Metadaten und Datenschutzscan erfolgreich
+- responsive Browserchecks fuer Desktop, Tablet und Smartphone ohne horizontalen Overflow
+- Accessibility-Basics: Landmark-Struktur, ein H1 pro Seite, Skip-Link, Linktexte und Kontrast geprueft
+- Veroeffentlichungsblocker bleiben in `CONTENT_REVIEW.md` dokumentiert
+
+Meilenstein 8 bereitet die Testveroeffentlichung vor:
+
+- GitHub-Pages-Workflow unter `.github/workflows/deploy.yml`
+- Workflow startet nur manuell ueber `workflow_dispatch`
+- Test-URL: `https://jonathanfuetz.github.io/website_portfolio/`
+- GitHub-Pages-Build setzt `ASTRO_BASE=/website_portfolio`
+- Testumgebung setzt `PUBLIC_SITE_NOINDEX=true`, solange rechtliche Platzhalter offen sind
+- Vor dem manuellen Start muss GitHub Pages im Repository auf Source `GitHub Actions` gestellt werden
+
+## GitHub-Pages-Testbuild
+
+```bash
+ASTRO_SITE=https://jonathanfuetz.github.io \
+ASTRO_BASE=/website_portfolio \
+PUBLIC_SITE_NOINDEX=true \
+npm run build
+```

@@ -1,5 +1,8 @@
 ---
 const { site } = Astro.props;
+const basePath = import.meta.env.BASE_URL || "/";
+const normalizedBase = basePath === "/" ? "" : basePath.replace(/\/$/, "");
+const withBase = (href) => (href.startsWith("/") ? `${normalizedBase}${href}` || "/" : href);
 ---
 
 <footer class="site-footer">
@@ -8,7 +11,7 @@ const { site } = Astro.props;
     <nav class="footer-links" aria-label="Rechtliche Navigation">
       {
         site.legalLinks.map((item) => (
-          <a href={item.href}>{item.label}</a>
+          <a href={withBase(item.href)}>{item.label}</a>
         ))
       }
     </nav>

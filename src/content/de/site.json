@@ -1,5 +1,11 @@
 {
   "brand": "Jonathan Fütz",
+  "seo": {
+    "baseUrl": "https://jonathan-fuetz.example",
+    "siteName": "Jonathan Fütz",
+    "locale": "de_DE",
+    "defaultImage": ""
+  },
   "homeLabel": "Start",
   "navigationLabel": "Hauptnavigation",
   "nav": [
@@ -45,7 +51,8 @@
   "legal": {
     "impressum": {
       "title": "Impressum",
-      "metaDescription": "Impressum fuer die Portfolio-Website.",
+      "pageTitle": "Impressum | Jonathan Fütz",
+      "metaDescription": "Impressum der Portfolio-Website von Jonathan Fütz.",
       "intro": "Diese Seite enthaelt Platzhalter fuer die spaeter rechtlich zu pruefenden Pflichtangaben.",
       "sections": [
         {
@@ -67,7 +74,8 @@
     },
     "datenschutz": {
       "title": "Datenschutzerklaerung",
-      "metaDescription": "Datenschutzhinweise fuer die statische Portfolio-Website.",
+      "pageTitle": "Datenschutzerklaerung | Jonathan Fütz",
+      "metaDescription": "Datenschutzhinweise fuer die statische Portfolio-Website von Jonathan Fütz ohne Tracking, Analytics und Kontaktformular.",
       "intro": "Diese statische Website ist ohne Tracking, Analytics und Kontaktformular geplant.",
       "sections": [
         {

@@ -1,0 +1,29 @@
+---
+const { profile } = Astro.props;
+---
+
+<section class="intro" id="profil" aria-labelledby="page-title">
+  <div class="technical-backdrop" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="intro__content">
+    <p class="eyebrow">{profile.eyebrow}</p>
+    <h1 id="page-title">{profile.name}</h1>
+    <p class="headline">{profile.headline}</p>
+    <p>{profile.summary}</p>
+    <div class="intro__actions" aria-label="Direkte Navigation">
+      <a class="button button--primary" href="#kontakt">Kontakt</a>
+      <a class="button button--secondary" href="#schwerpunkte">Schwerpunkte</a>
+    </div>
+  </div>
+  <aside class="intro__visual" aria-label="Portraet-Platzhalter">
+    <div class="portrait-frame" aria-hidden="true">
+      <span>JF</span>
+    </div>
+    <ul class="tag-list tag-list--hero" aria-label={profile.focusLabel}>
+      {profile.focus.map((item) => <li>{item}</li>)}
+    </ul>
+  </aside>
+</section>
