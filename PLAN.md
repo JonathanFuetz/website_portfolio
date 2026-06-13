@@ -2,22 +2,57 @@
 
 ## Zusammenfassung
 
-Die erste Version wird eine kompakte, seriöse, statische Portfolio-Website auf Deutsch: ein Onepager für Profil, Ausbildung, Erfahrung, Kompetenzen, Projekte und Kontakt, ergänzt durch separate Seiten für Impressum und Datenschutzerklärung. Die Website wird für Maschinenbau, Luft- und Raumfahrttechnik sowie F&E-Zielgruppen optimiert, bleibt schnell, barrierearm, datenschutzbewusst und später leicht auf Englisch, eigene Domain und professionelle E-Mail erweiterbar.
+Die erste Version wird eine kompakte, seriöse, statische Portfolio-Website auf Deutsch: ein Onepager für Profil, Ausbildung, Erfahrung, Kompetenzen, Projekte und Kontakt, ergänzt durch separate Seiten für Impressum und Datenschutzerklärung. Die Website wird für Jonathan Fütz als Maschinenbaustudent mit Vertiefung Luft- und Raumfahrttechnik an der Technischen Universität Dresden geplant. Fachlicher Schwerpunkt der Darstellung: Konstruktion, Mess- und Steuerungstechnik, Formgedächtnistechnik, Python-basierte Bildverarbeitung sowie studienbezogene Simulations- und Analysewerkzeuge. Die Website bleibt schnell, barrierearm, datenschutzbewusst und später leicht auf Englisch, eigene Domain und professionelle E-Mail erweiterbar.
 
 Empfohlene Grundentscheidung: statische Website mit getrennten Inhaltsdateien in Markdown/Datenformaten, GitHub als bevorzugter Arbeits- und Veröffentlichungsweg, aber ohne harte Bindung an einen einzelnen Hosting-Anbieter.
+
+## Inhaltsgrundlage Und Veröffentlichungsregeln
+
+Quelle für die inhaltliche Planung ist `PROFILE_CONTENT_Jonathan_Fuetz.md`. Diese Datei ist eine Arbeitsgrundlage, nicht automatisch veröffentlichter Seitentext.
+
+### Bestätigte öffentliche Basisdaten
+
+- Name: Jonathan Fütz.
+- Ort/Standortregion: Dresden, Deutschland.
+- Studium: Diplom Maschinenbau an der Technischen Universität Dresden.
+- Vertiefung: Luft- und Raumfahrttechnik.
+- Aktuelle Tätigkeit: Werkstudent am Fraunhofer-Institut für Werkzeugmaschinen und Umformtechnik IWU, Abteilung Formgedächtnistechnik.
+- LinkedIn: `https://www.linkedin.com/in/jonathan-fuetz/`.
+- E-Mail-Adresse für die Website: noch festzulegen.
+- Eigene Domain: noch auszuwählen.
+
+### Nicht öffentlich verwenden
+
+- vollständige Wohnanschrift.
+- Geburtsdatum.
+- private Telefonnummer, sofern nicht ausdrücklich freigegeben.
+- mehrere unterschiedliche E-Mail-Adressen.
+- interne oder vertrauliche Projektdaten.
+- nicht freigegebene Bilder, Zeichnungen oder Arbeitsergebnisse von Arbeitgebern.
+
+### Prüf- und Freigaberegeln
+
+- Angaben mit `[PRÜFEN]` dürfen nicht als bestätigte Fakten veröffentlicht werden.
+- Der Entwurf des Kurzprofils darf als Arbeitsgrundlage verwendet werden, muss aber vor Veröffentlichung fachlich ausgerichtet werden.
+- Besonders zu prüfen:
+  - Soll das Kurzprofil stärker auf Aerodynamik, CFD und Antriebstechnik ausgerichtet werden?
+  - Welche Bilder, technischen Daten und Projektdetails zum Fraunhofer-IWU-Demonstrator dürfen öffentlich gezeigt werden?
+  - Wie lautet der aktuelle Status des Deutschlandstipendiums?
+  - Soll der PDF-Lebenslauf öffentlich downloadbar sein?
+  - Welche Nebenjobs sollen auf der Website erscheinen, wenn überhaupt?
 
 ## Struktur, Inhalte Und Gestaltung
 
 ### Seiten- und Navigationsstruktur
 
 - `/` Hauptseite:
-  - Intro mit Name-Platzhalter, professionellem Rollenprofil, Bewerbungsfoto-Platzhalter und Kontakt-CTA.
-  - Kurzprofil: technischer Fokus, Studien-/Berufsschwerpunkt, Zielrichtung.
-  - Ausbildung: Studium, Vertiefung, relevante Module, Abschlussarbeiten, Platzhalter bis Inhalte vorliegen.
-  - Berufserfahrung: Praktika, Werkstudententätigkeiten, relevante Stationen.
-  - Technische Kompetenzen: CAD/CAE, Programmierung, Simulation, Fertigung, Tools, Sprachen.
-  - Projekte: kompakte Projektkarten mit technischem Kontext, Methoden, Tools, Ergebnis nur wenn belegt.
-  - Kontakt: geschützte E-Mail-Darstellung, LinkedIn-Link, optional Standortregion.
+  - Intro mit Name Jonathan Fütz, professionellem Rollenprofil, Bewerbungsfoto-Platzhalter und Kontakt-CTA.
+  - Kurzprofil: Maschinenbau, Luft- und Raumfahrttechnik, Fraunhofer-IWU-Werkstudententätigkeit, technische Anwendungsschwerpunkte.
+  - Ausbildung und Auszeichnungen: TU Dresden, Abitur, Stipendien; relevante Module bleiben Platzhalter bis nachgeliefert.
+  - Berufserfahrung: Fraunhofer IWU, Hannweber Engineering, Fraunhofer IMWS; KSB optional gekürzt.
+  - Technische Kompetenzen: CAD/Engineering-Software, Simulation/Analyse, Programmierung/Hardware, Office, Sprachen.
+  - Projekte: kompakte Projektkarten mit technischem Kontext, Methoden, Tools, Ergebnis nur wenn belegt und freigegeben.
+  - Kontakt: geschützte E-Mail-Darstellung nach Festlegung, LinkedIn-Link, Standortregion Dresden.
 - `/impressum/`:
   - Rechtlicher Platzhalter, später mit korrekten Pflichtangaben zu füllen.
 - `/datenschutz/`:
@@ -36,11 +71,44 @@ Empfohlene Grundentscheidung: statische Website mit getrennten Inhaltsdateien in
 - Kontaktbereich mit geschützter E-Mail-Strategie.
 - Impressum und Datenschutzerklärung als sichtbare Navigationseinträge oder Footer-Links.
 
+### Geplante persönliche Inhalte für Version 1
+
+- Rollen-/Profilheadline, Arbeitsfassung: "Maschinenbaustudent mit Vertiefung Luft- und Raumfahrttechnik und praktischer Erfahrung in Konstruktion, Mess- und Steuerungstechnik sowie Python-basierter Bildverarbeitung."
+- Kurzprofil, Arbeitsfassung: Studium Maschinenbau mit Vertiefung Luft- und Raumfahrttechnik an der TU Dresden; Werkstudent am Fraunhofer IWU in der Formgedächtnistechnik; technische Demonstratoren, CAD-Konstruktion, Mess- und Steuerungstechnik; zusätzlich Python/OpenCV, Arduino-Testumgebungen sowie experimentelle Werkstoff- und Klebuntersuchungen.
+- Ausbildung:
+  - Technische Universität Dresden, Diplom Maschinenbau, Vertiefung Luft- und Raumfahrttechnik, seit 10/2023, Zwischenzeugnis/Vordiplom Semester 1-4: Note 1,2.
+  - Georg-Cantor-Gymnasium Halle (Saale), Abitur 09/2015-06/2023, Note 1,1, MINT-EC-Zertifikat, Junior-Ingenieur-Akademie 2018-2020.
+- Berufserfahrung:
+  - Fraunhofer IWU, Dresden, seit 01/2025, Werkstudent Abteilung Formgedächtnistechnik.
+  - Hannweber Engineering, Dresden, 08/2024-10/2024, freiwilliges Praktikum.
+  - Fraunhofer IMWS, Halle (Saale), 10/2022-11/2022, Bewertung von Faserverbundsystemen.
+  - KSB SE & Co. KGaA, Halle (Saale), 11/2019, Schülerpraktikum, optional stark gekürzt.
+- Kenntnisse:
+  - CAD/Engineering: SolidWorks, Mathcad, MATLAB.
+  - Simulation/Analyse: ANSYS Workbench, LS-DYNA, Patran/Nastran, OpenFOAM, ParaView.
+  - Programmierung/Hardware: Python, OpenCV, NumPy, Matplotlib, C# Grundkenntnisse, Arduino.
+  - Office: Microsoft Office.
+  - Sprachen: Deutsch Muttersprache, Englisch B2+, Französisch B1.
+- Stipendien/Auszeichnungen:
+  - Deutschlandstipendium ab 10/2024, aktueller Status noch prüfen.
+  - MINT-Stipendium der Gesellschaft von Freunden und Förderern der TU Dresden e. V., 10/2023-09/2024.
+- Interessen optional und nachgeordnet: 3D-Druck, Klavierspielen, Leichtathletik, Kraftsport.
+
+### Projektkandidaten
+
+- FGL-Demonstrator / Hochlast-Aktoren auf Basis thermischer Formgedächtnislegierungen, nur mit geprüfter Freigabe zu Bildern, technischen Daten und Details.
+- Python-/OpenCV-Bildverarbeitung bei Hannweber Engineering, Schwerpunkt Videoverarbeitung und Objekttrennung.
+- Arduino-basierte Testumgebung zur Simulation realer Bedingungen.
+- Testumgebung zur Untersuchung der Haltbarkeit von Klebverbindungen in flüssigem Stickstoff am Fraunhofer IMWS.
+- Ausgewählte Studienprojekte, falls ausreichend konkrete und veröffentlichbare Angaben nachgeliefert werden.
+
 ### Optionale Inhalte
 
 - Downloadbarer PDF-Lebenslauf erst nach bewusster Freigabe.
 - Englische Inhalte nach der deutschen Erstversion.
 - Projekt-Detailseiten, Bilder, technische Diagramme, Zertifikate, Publikationen.
+- GitHub-Profil nur wenn öffentlich nutzbar und fachlich passend.
+- Arbeitgeberlogos nur nach Freigabe.
 - Blog, Kontaktformular, Analytics oder CMS nicht in Version 1.
 
 ### Mehrsprachigkeit
@@ -147,10 +215,12 @@ Website_Jonathan/
 ## Lebenslauf, LinkedIn Und Inhalte
 
 - Lebenslauf wird nicht automatisch übernommen, sondern strukturiert ausgewertet.
-- Aus CV und LinkedIn werden nur belegbare, freigegebene Inhalte übernommen.
+- Aus CV, LinkedIn und `PROFILE_CONTENT_Jonathan_Fuetz.md` werden nur belegbare, freigegebene Inhalte übernommen.
 - Doppelte oder widersprüchliche Angaben werden vor Umsetzung markiert.
 - Sensible Angaben wie private Adresse, Telefonnummer, Geburtsdatum oder vollständiger PDF-Lebenslauf werden nicht ohne Freigabe veröffentlicht.
 - Projektinhalte werden auf Vertraulichkeit geprüft: keine internen Daten, keine proprietären Ergebnisse, keine Arbeitgebergeheimnisse.
+- Der Status des Deutschlandstipendiums ist widersprüchlich beziehungsweise unbestätigt und muss vor Veröffentlichung vereinheitlicht werden.
+- Die Website-Texte sollen sachlich und technisch präzise bleiben, nicht übertrieben werblich.
 
 ## Meilensteine Mit Abnahme
 
@@ -193,11 +263,20 @@ Website_Jonathan/
 ### Meilenstein 5: Kompetenzen Und Projekte
 
 - Ziel: Technische Fähigkeiten und Projekte prüfbar darstellen.
-- Aufgaben: Skill-Gruppen, Projektkarten, Tool-Tags, Kontext und belegbare Ergebnisse einbauen.
+- Aufgaben: Skill-Gruppen, Projektkarten, Tool-Tags, Kontext und belegbare Ergebnisse einbauen; dabei bestätigte Angaben aus `PROFILE_CONTENT_Jonathan_Fuetz.md` übernehmen und `[PRÜFEN]`-Inhalte als offene Punkte markieren.
 - Bereiche: `skills.json`, `projects.json`, `SkillGroup`, `ProjectCard`.
 - Ergebnis: Recruiter und Fachabteilungen können technische Eignung schnell erfassen.
-- Prüfschritte: Keine unbelegten Kompetenzgrade, keine vertraulichen Projektdetails.
+- Prüfschritte: Keine unbelegten Kompetenzgrade, keine vertraulichen Projektdetails, keine Projektbilder oder Arbeitgeberlogos ohne Freigabe.
 - Abnahme: Jede Fähigkeit und jedes Projekt stammt aus freigegebenem Material oder ist Platzhalter.
+
+### Meilenstein 5a: Persönliche Inhalte Einpflegen
+
+- Ziel: Bestätigte öffentliche Profil-, Ausbildungs- und Erfahrungsdaten in die Inhaltsdateien übernehmen.
+- Aufgaben: `profile.md`, `education.md`, `experience.md`, `skills.json` und `projects.json` mit bestätigten Fakten aus `PROFILE_CONTENT_Jonathan_Fuetz.md` aktualisieren.
+- Bereiche: `src/content/de/`.
+- Ergebnis: Die Website enthält echte, belegbare Basisdaten statt generischer Platzhalter, aber keine privaten oder ungeprüften Angaben.
+- Prüfschritte: Alle `[PRÜFEN]`-Punkte bleiben ausgeschlossen oder sichtbar als offene interne To-dos; keine private Adresse, kein Geburtsdatum, keine private Telefonnummer.
+- Abnahme: Jonathan bestätigt, dass die übernommenen Angaben öffentlich verwendet werden dürfen.
 
 ### Meilenstein 6: Datenschutz, SEO Und Metadaten
 
@@ -250,14 +329,20 @@ Website_Jonathan/
 
 ## Offene Fragen Vor Umsetzung
 
-- Wie lautet der vollständige Name, der öffentlich angezeigt werden soll?
-- Welche Rollenheadline soll im Hero stehen, z. B. Maschinenbauingenieur, Aerospace Engineering, R&D?
-- Welche CV-Version darf als Quelle verwendet werden?
+- Soll der öffentliche Name exakt "Jonathan Fütz" lauten?
+- Soll die Rollenheadline deutsch bleiben oder zusätzlich englisch erscheinen?
+- Soll die deutsche Kurzbezeichnung aus `PROFILE_CONTENT_Jonathan_Fuetz.md` verwendet oder stärker auf Aerodynamik, CFD und Antriebstechnik ausgerichtet werden?
+- Welche CV-Version darf als Quelle verwendet werden und darf ein PDF-Lebenslauf später angeboten werden?
 - Soll ein PDF-Lebenslauf später öffentlich, nur auf Anfrage oder gar nicht angeboten werden?
 - Welche E-Mail-Adresse darf öffentlich erscheinen oder geschützt dargestellt werden?
-- Welche LinkedIn-URL darf verlinkt werden?
-- Welche Projekte dürfen öffentlich beschrieben werden?
+- Welche Domain soll verwendet werden?
+- Darf die LinkedIn-URL `https://www.linkedin.com/in/jonathan-fuetz/` öffentlich verlinkt werden?
+- Welche Projekte dürfen öffentlich beschrieben werden und in welchem Detailgrad?
+- Welche Bilder, technischen Daten, Zeichnungen, Logos oder Arbeitsergebnisse sind freigegeben?
 - Gibt es Arbeitgeber-, Hochschul- oder Projektdaten, die vertraulich bleiben müssen?
+- Sollen Nebenjobs bei CITY-CAR und REICHE GROUP auf der Website erscheinen oder bewusst weggelassen werden?
+- Wie lautet der aktuelle Status des Deutschlandstipendiums?
+- Gibt es relevante Studienmodule, fachliche Interessen oder Zielrollen, die ausdrücklich genannt werden sollen?
 - Soll ein Porträtfoto verwendet werden, und liegt dafür eine webtaugliche Version vor?
 - Welche Domain wird später gekauft? Platzhalter bis dahin: `[MEINE-DOMAIN.DE]`.
 - Soll später eine professionelle E-Mail-Adresse wie `kontakt@[MEINE-DOMAIN.DE]` eingerichtet werden?
